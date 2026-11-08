@@ -116,7 +116,7 @@ Las ocho decisiones que más explican el repositorio. El resto está en 01 §2 (
 | **TypeScript estricto, Fastify 5, PostgreSQL 18 y Node 24 LTS** | El riesgo principal son las reglas de datos (dueño de cada campo, historial de consentimientos, nivel que puede ser `null`): el compilador y los esquemas zod atrapan lo que las pruebas no cubren. Fastify trae validación, `inject()` para probar rutas y plugins oficiales de seguridad | 01 decisiones 1, 2, 9 y 11 |
 | **HTML en el servidor, sin SPA** (TSX con `preact-render-to-string`) | Páginas livianas en el celular y velocidad medida en cada build; formularios que funcionan sin JavaScript; los mismos componentes sirven al mockup y a las páginas reales | 01 decisiones 3, 4 y 29 |
 | **PostgreSQL con pg-boss, sin Redis** | Un servicio menos en un droplet de 4 GB que también corre ClamAV, y el trabajo se encola en la misma transacción que el dato (un webhook y su trabajo entran juntos o no entran) | 01 decisiones 8 y 32 |
-| **Controles `SEC-nn` con prueba del mismo nombre** | 88 controles con identificador fijo; cada uno dice qué exige, de dónde sale y qué prueba lo vigila. La prueba lleva el identificador, así un `grep` une el plan con el código | 02, introducción y §4 |
+| **Controles `SEC-nn` con prueba del mismo nombre** | 89 controles con identificador fijo; cada uno dice qué exige, de dónde sale y qué prueba lo vigila. La prueba lleva el identificador, así un `grep` une el plan con el código | 02, introducción y §4 |
 | **Pruebas contra PostgreSQL real, nunca simulado** | Los permisos por columna, las cascadas, los roles y PostGIS solo se prueban de verdad en una base real; la suite tarda segundos | 01 decisión 22 |
 | **Fase 0 antes del reloj** | 1A y 1B no caben solos en 15 días hábiles. Lo que no necesita cuentas ni marca se construye antes, con dobles de prueba; el reloj queda para cuentas, servidor, mockup, páginas y conexiones reales | 04, cabecera y "Estimación honesta" |
 | **Mockup antes de las páginas con marca; lógica neutra en paralelo** | El contrato pide el mockup aprobado antes de construir páginas. La lógica y las páginas neutras no esperan esa aprobación; solo la espera el vestido con la marca (T-41, T-42 y T-43) | 01 decisión 29; 05; 04 "Regla de las páginas" |
@@ -173,6 +173,8 @@ Las ocho decisiones que más explican el repositorio. El resto está en 01 §2 (
 | Plan | 5 documentos, unas 2 700 líneas | 5 documentos y este contexto |
 
 Qué hizo T-04b, control por control: las notas "Implementado en T-04b" de 02 y la tarea T-04b en 04.
+
+**Actualización del 7 de noviembre de 2026:** se propuso una ampliación multi-tenant por organización, conservando el roster maestro bajo DieselJobsUSA y permitiendo el acceso de cada organización solo con autorización explícita vigente del candidato. El stack acordado no cambia. T-04c registra esta decisión en los documentos y SEC-89; el código y las migraciones siguen sin cambios. La ampliación no forma parte del alcance contractual aprobado: T-04d debe cerrar el consentimiento, los campos visibles, los roles, el calendario y el mecanismo de aislamiento antes de implementarla. Hasta entonces el tenant no accede al roster.
 
 **Lo que todavía no existe:** CI y verifier completo (T-23), screener falso (T-06), datos de semilla (T-22), infraestructura del servidor (T-26), `docs/ops/` y `docs/handoff/`. No hay servidor ni cuentas: el reloj del Sprint 1 no ha empezado (faltan las cuentas, los archivos de marca y el endpoint de Trabian).
 

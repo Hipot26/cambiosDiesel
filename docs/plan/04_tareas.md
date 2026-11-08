@@ -1,6 +1,6 @@
 # DieselJobsUSA — Plan de construcción por tareas (Sprint 1)
 
-Versión 1.0 · 28 de octubre de 2026 · Documento de trabajo de Sergio Duran
+Versión 1.1 · 7 de noviembre de 2026 · Documento de trabajo de Sergio Duran
 
 Este es el plan de construcción. Se apoya en `01_arquitectura.md`, `02_seguridad.md` y `03_backend.md`; cuando algo de aquí choque con ellos, mandan ellos. Cada tarea está pensada para hacerse, probarse y revisarse **en una sola sesión** de Claude Code, con el modelo normal o con Fable para las difíciles. Las horas son de trabajo con Claude Code, incluidas las pruebas y la revisión; son estimaciones honestas, no promesas.
 
@@ -13,6 +13,8 @@ Este es el plan de construcción. Se apoya en `01_arquitectura.md`, `02_segurida
 - **Fase 1B.** Las páginas, el registro y el panel vestidos con la marca (después de que Toya apruebe el mockup), el screener real, RecruiterFlow y Twilio reales, los entregables de la revisión y la publicación.
 
 **Regla de las páginas** (una sola regla; `05_mockup.md` §8 dice lo mismo): la fase 0 construye la lógica y las páginas con **estilo neutro** y **no espera** la aprobación del mockup. La aprobación de Toya condiciona solo las tareas que **visten** con la marca: T-41 (las seis páginas), T-42 (registro, siguientes pasos, cuenta y correos) y T-43 (panel). El mockup vive en `mockup/` (estático, mismo stack TSX + Tailwind que las páginas reales; `05_mockup.md`) y se dibuja en paralelo; lo que Toya apruebe se muda a `src/views/` en esas tres tareas, sin reescribir. Ninguna tarea de la fase 0 depende de una ronda de revisión, así que la espera entre rondas no saca horas de la fase 0 hacia el reloj.
+
+**Bloqueo de alcance multi-tenant (7 nov 2026):** T-04c documenta la ampliación propuesta; T-04d debe cerrar su alcance y consentimiento antes de implementar accesos por organización. No se cambian datos, rutas ni pantallas de candidatos para tenants hasta que T-04d esté aceptada y el plan técnico de migración/aislamiento quede desglosado en tareas de una sesión. T-05 y T-06 no leen ni modifican candidatos y pueden seguir por separado.
 
 ---
 
@@ -113,6 +115,22 @@ Este es el plan de construcción. Se apoya en `01_arquitectura.md`, `02_segurida
   - Permisos (`tests/schema/insert-only.test.ts`): `SEC-10 tombstones: el rol de app escribe lápidas pero no las borra ni las cambia`, `SEC-12 phone_suppression: sin DELETE y con UPDATE solo de last_seen_at (03 §3.4)`, `SEC-67 email_suppression: el rol de app inserta pero no borra ni edita`.
   - Esquema: `SEC-75 toda FK hacia candidates tiene un índice que empieza por esa columna` (`cascades.test.ts`); en `checks.test.ts`, `esquema: cada CHECK de conjunto cerrado tiene exactamente los valores de su constante`, `esquema: un purpose fuera de TOKEN_PURPOSES se rechaza`, `esquema: una sesión con dos dueños o con el dueño del otro tipo se rechaza; sin dueño se admite (CSRF, SEC-36)`, `SEC-72 una huella sin key_id se rechaza`, `esquema: phone_e164 con formato +1 y diez dígitos, language en o es`; en `forbidden-columns.test.ts`, `esquema sin columnas prohibidas (por patrón, no por nombre exacto)` y `los patrones de columnas prohibidas atrapan variantes de los nombres`; en `migrations.test.ts`, `el diario de Drizzle tiene exactamente las migraciones de _journal.json, en orden`.
   - Anillo y pool: `KEY_ID_COLUMNS cubre toda columna que termina en key_id y nombra su huella real`, `SEC-72 el arranque falla si una tabla tiene un key_id que no está en PHONE_HASH_KEYS` (ahora dentro de una transacción que se deshace), `SEC-72 assertKeyringCoversDatabase lee con el pool de la app; KeyringError sale de keyring-check` (`src/db/keyring-check.test.ts`); `cada conexión del pool lleva statement_timeout de 10 s y application_name` (`src/db/client.test.ts`).
+
+### T-04c · Aclaración del modelo multi-tenant y actualización del plan
+- **Fase:** 0 · **Depende de:** T-04b · **Modelo:** normal · **Estado:** hecha el 7 nov 2026
+- **Implementa:** 01 §1; 02 SEC-89; 03 §1
+- **Archivos:** `docs/plan/01_arquitectura.md`, `docs/plan/02_seguridad.md`, `docs/plan/03_backend.md`, `docs/plan/04_tareas.md`, `CLAUDE.md`, `docs/00_contexto.md`
+- **Qué hacer:** registrar que las organizaciones son tenants, mantener el roster maestro bajo DieselJobsUSA y permitir acceso por organización solo con autorización explícita; conservar el stack actual; dejar visibles las decisiones contractuales, legales y técnicas pendientes. No modificar código ni migraciones.
+- **Aceptación:** la documentación distingue el roster central de los datos propios de cada organización, define SEC-89 y bloquea la implementación de acceso tenant hasta cerrar T-04d.
+- **Pruebas:** revisión documental de consistencia entre 01, 02, 03, 04 y `CLAUDE.md`; no aplica una suite de código.
+
+### T-04d · Cierre del alcance y consentimiento multi-tenant
+- **Fase:** 0 · **Depende de:** T-04c · **Modelo:** normal · **Horas:** por estimar con el alcance aprobado
+- **Implementa:** 01 §1; 02 SEC-89; 03 §1
+- **Archivos:** documentos de alcance aprobados por el cliente y el abogado; después, las secciones afectadas de `docs/plan/`
+- **Qué hacer:** confirmar el cambio contractual y el calendario; definir el texto y alcance del consentimiento por organización, su revocación, los campos que puede ver cada organización (incluido `level`), el acceso a documentos y los roles de plataforma/organización. Después desglosar la implementación y la migración expandir/contraer en tareas independientes de una sesión, y decidir el mecanismo de aislamiento antes de tocar datos o rutas de candidatos.
+- **Aceptación:** decisiones funcionales y legales documentadas y aprobadas; tareas de implementación con dependencias, migraciones y pruebas SEC-89 definidas. Hasta entonces, ningún tenant consume el roster.
+- **Pruebas:** aprobación manual del cliente/abogado y revisión de seguridad del diseño; todavía no hay pruebas de código.
 
 ### T-05 · Vocabulario: carga, validación y endpoint
 - **Fase:** 0 · **Depende de:** T-03, T-04 · **Modelo:** normal · **Horas:** 5

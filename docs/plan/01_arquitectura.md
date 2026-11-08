@@ -1,6 +1,6 @@
 # DieselJobsUSA — Arquitectura del Sprint 1
 
-Versión 1.0 · 28 de octubre de 2026 · Documento de trabajo de Sergio Duran
+Versión 1.1 · 7 de noviembre de 2026 · Documento de trabajo de Sergio Duran
 
 Este documento registra cómo se construye DieselJobsUSA: las decisiones ya tomadas en los documentos del proyecto, las decisiones técnicas de esta construcción, las piezas del sistema y cómo se comunican, los tres entornos, qué entrega el milestone 1A y qué el 1B, las dependencias externas, los riesgos para el calendario de 15 días hábiles y las preguntas abiertas. Está escrito para que cualquiera que retome el proyecto entienda por qué las cosas son como son.
 
@@ -24,6 +24,16 @@ Fuentes citadas:
 ## 1. Decisiones ya tomadas
 
 No se vuelven a discutir en el Sprint 1. Cada fila dice de dónde sale la decisión.
+
+### Ampliación funcional propuesta: organizaciones y roster central
+
+El 7 de noviembre de 2026 se aclaró para esta planificación que cada organización reclutadora o empleadora es un tenant, pero el registro maestro de candidatos sigue siendo propiedad de la plataforma DieselJobsUSA. La plataforma conserva un roster central; una organización solo puede acceder a los datos de un candidato cuando existe autorización explícita para esa organización. La pertenencia de un usuario a una organización no basta por sí sola para revelar candidatos.
+
+Esta ampliación no cambia el stack acordado: siguen vigentes Node 24, TypeScript, Fastify, PostgreSQL, Drizzle y las vistas SSR. No se adoptan Python/FastAPI, React/Vite, Alembic ni `uv` del documento de estructura; esas son decisiones técnicas ajenas a la lógica de negocio que se incorporó.
+
+El candidato y su evaluación de ScreenProof siguen siendo registros maestros de la plataforma, no registros propiedad de un empleador. Las organizaciones no pueden editar esos registros. Toda exposición de campos, nivel, documentos, exportaciones o búsquedas a una organización requiere una autorización vigente y acotada a esa organización. Sin autorización vigente, el acceso falla cerrado. El detalle de la autorización, su texto legal, su revocación y los campos visibles quedan pendientes de aprobación del cliente y del abogado.
+
+Esta es una ampliación propuesta en la planificación, no una modificación aprobada del contrato ni del calendario. Antes de implementar acceso para tenants se debe cerrar el alcance contractual, aprobar las reglas de consentimiento y decidir el mecanismo técnico de aislamiento. No se agrega `tenant_id` mecánicamente al roster central ni se cambia el mockup hasta superar ese bloqueo.
 
 ### Alcance y orden
 

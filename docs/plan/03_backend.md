@@ -1,6 +1,6 @@
 # DieselJobsUSA — Diseño del backend (milestones 1A y 1B)
 
-Versión 1.0 · 28 de octubre de 2026 · Documento de trabajo de Sergio Duran
+Versión 1.1 · 7 de noviembre de 2026 · Documento de trabajo de Sergio Duran
 
 Este documento dice cómo se construye el backend del Sprint 1: el modelo de datos, las rutas, los flujos de los webhooks y del registro, los trabajos en segundo plano, las integraciones, el vocabulario, las migraciones y los tres esquemas que Toya pidió para la revisión. Cumple `01_arquitectura.md` (Arquitectura) y `02_seguridad.md` (Seguridad). Cuando una decisión implementa un control de seguridad, cita su identificador (`SEC-nn`). Los nombres de tablas, columnas y funciones que ya aparecen en Seguridad se usan sin cambios.
 
@@ -21,6 +21,14 @@ Fuentes: las mismas de Arquitectura (Contrato, Spec de integración, Rev 8, Walk
 ## 1. Modelo de datos
 
 PostgreSQL 18 con PostGIS. Esquema en TypeScript con Drizzle (`pgTable`); migraciones SQL generadas con drizzle-kit y revisadas en el pull request. Convenciones: ids `uuid` generados por PostgreSQL con `uuidv7()` (Arquitectura decisión 10); fechas `timestamptz` en UTC; nombres de tablas y columnas en inglés en `snake_case`; toda fila lleva al menos una fecha `timestamptz` que dice cuándo nació: `created_at` en las tablas de registro (candidatos, empresas y alias, empleos, archivos, tokens, sesiones, staff, tareas, auditoría, screens, overrides, consentimientos, no mapeados, correos enviados) y, en las de historial, eventos y contadores, la fecha propia del hecho (`occurred_at`, `received_at`, `started_at`, `attempted_at`, `sent_at`, `added_at`, `edited_at`, `uploaded_at`, `first_seen_at`, `deleted_at`, `window_start`); `settings` y `recruiterflow_sync` solo guardan su última actualización y `zip_centroids` no lleva fecha (su versión va en `source_version`); **toda clave foránea hacia `candidates` lleva `ON DELETE CASCADE`** y una prueba de esquema lo verifica (SEC-75); los `jsonb` que vienen del screener se guardan tal cual y además se extraen las columnas que se filtran.
+
+### Alcance funcional multi-tenant propuesto
+
+- `organizations` representa a cada organización reclutadora o empleadora; sus usuarios y roles se limitan a esa organización. Los usuarios de plataforma que administran el roster central son una capacidad separada, no una membresía implícita de cada empleador.
+- `candidates`, sus evaluaciones/screens y los documentos originales continúan en el roster central de DieselJobsUSA. No se duplican ni pasan a ser propiedad de cada empleador. No se añade `tenant_id` a esas tablas solo para cumplir una plantilla genérica.
+- El acceso de una organización al roster se representa aparte y requiere autorización explícita del candidato para esa organización. Sin una autorización vigente no hay lectura, búsqueda, descarga, exportación ni uso en trabajos en segundo plano. La revocación debe cortar accesos futuros y los enlaces de archivos.
+- Los datos que sí son propios de una organización (por ejemplo, sus usuarios, empleos y aplicaciones) quedan separados por organización. La lista exacta de campos del candidato que se comparte, el tratamiento de `level` y el texto/alcance del consentimiento siguen pendientes de aprobación.
+- El esquema actual de 34 tablas es el estado implementado de T-04/T-04b, no una instrucción para reescribir migraciones ya aplicadas. El diseño de relaciones, permisos y migración expandir/contraer se hará después de cerrar el alcance (T-04d). La estrategia técnica de aislamiento de PostgreSQL debe quedar definida antes de implementar SEC-89.
 
 Tres reglas más, desde la migración 0003 (T-04b):
 

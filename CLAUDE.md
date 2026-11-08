@@ -48,6 +48,7 @@ npm run verify              # verifier local completo (llega en T-23)
 12. Usar datos reales de candidatos en local, staging, pruebas o documentación.
 13. Confiar en Access sin validar el JWT en la app y comparar el email con el usuario de la sesión (SEC-31).
 14. Redirigir a un valor del usuario sin `safeRedirect` (SEC-53).
+15. Permitir a una organización leer el roster central solo por conocer un id o enviar un `tenant_id`; se requieren membresía autenticada y autorización explícita vigente del candidato para esa organización (SEC-89).
 
 **Siempre, antes de dar una tarea por terminada:**
 1. Cada ruta nueva tiene esquema zod de entrada `.strict()` y de salida (SEC-54, SEC-61).
@@ -56,6 +57,7 @@ npm run verify              # verifier local completo (llega en T-23)
 4. Una lectura del diff buscando datos personales en logs, campos borrados a mano, SQL concatenado, redirecciones, cookies sin atributos, rutas sin rol o sin CSRF, y que `trustProxy: '127.0.0.1'` siga en la creación de Fastify (SEC-27).
 5. Si cambia el esquema: migración en dos pasos (expandir, contraer) y toda FK hacia `candidates` con `ON DELETE CASCADE` (SEC-75).
 6. Si la tarea toca un control, se actualiza `02_seguridad.md` en el mismo cambio.
+7. Las rutas que exponen el roster a una organización verifican su membresía activa y la autorización del candidato en cada operación, incluidos archivos, exportaciones y trabajos en segundo plano (SEC-89).
 
 ## Reglas de dependencias
 
