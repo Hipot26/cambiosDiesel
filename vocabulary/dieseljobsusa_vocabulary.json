@@ -1,0 +1,4856 @@
+{
+  "name": "DieselJobsUSA controlled vocabulary",
+  "version": "2026-10-26",
+  "source": "DieselJobsUSA_Vocabulary.xlsx",
+  "owner": "Toya Turner, LaTrae Consulting Group",
+  "how_to_use": [
+    "Ask open questions. Never show these values to the candidate as a pick list.",
+    "After the answer, normalise it (lowercase, strip punctuation, collapse spaces) and look it up in alias_index for the list you are asking about.",
+    "Send both the canonical value and the candidate's own words: {\"value\": \"...\", \"said\": \"...\"}.",
+    "No match means no guess. Put it on the unmapped array with the category and what he said.",
+    "Reload this file rather than hardcoding the values. It grows without a code change."
+  ],
+  "lists": {
+    "trade": {
+      "label": "Trade",
+      "count": 39,
+      "groups": [
+        "Aggregates and mining",
+        "Crane and lifting",
+        "Entry and support",
+        "Equipment",
+        "Industrial",
+        "Leadership",
+        "Marine",
+        "Mission critical",
+        "Operations",
+        "Power generation",
+        "Truck and fleet",
+        "Utility"
+      ],
+      "values": [
+        {
+          "value": "Aggregates plant mechanic",
+          "group": "Aggregates and mining",
+          "aliases": [
+            "plant mechanic",
+            "plant maintenance",
+            "crusher mechanic",
+            "quarry mechanic",
+            "plant tech",
+            "millwright aggregate"
+          ]
+        },
+        {
+          "value": "Underground mine mechanic",
+          "group": "Aggregates and mining",
+          "aliases": ["mine mechanic", "underground mechanic", "mining technician", "LHD mechanic"]
+        },
+        {
+          "value": "Aerial lift technician",
+          "group": "Crane and lifting",
+          "aliases": [
+            "aerial tech",
+            "MEWP technician",
+            "boom lift mechanic",
+            "lift mechanic",
+            "AWP tech"
+          ]
+        },
+        {
+          "value": "Crane inspector",
+          "group": "Crane and lifting",
+          "aliases": [
+            "crane inspector",
+            "NCCCO inspector",
+            "lifting inspector",
+            "annual crane inspector"
+          ]
+        },
+        {
+          "value": "Crane technician",
+          "group": "Crane and lifting",
+          "aliases": [
+            "crane mechanic",
+            "crane tech",
+            "crane service technician",
+            "crane field tech"
+          ]
+        },
+        {
+          "value": "Forklift technician",
+          "group": "Crane and lifting",
+          "aliases": [
+            "forklift mechanic",
+            "lift truck technician",
+            "material handling tech",
+            "industrial truck mechanic"
+          ]
+        },
+        {
+          "value": "Apprentice technician",
+          "group": "Entry and support",
+          "aliases": [
+            "apprentice",
+            "helper",
+            "trainee",
+            "entry level tech",
+            "shop helper",
+            "tech in training"
+          ]
+        },
+        {
+          "value": "Preventive maintenance technician",
+          "group": "Entry and support",
+          "aliases": [
+            "PM tech",
+            "PM technician",
+            "lube tech",
+            "lube technician",
+            "B tech",
+            "C tech",
+            "oil change tech"
+          ]
+        },
+        {
+          "value": "Agricultural equipment technician",
+          "group": "Equipment",
+          "aliases": ["ag tech", "ag mechanic", "tractor mechanic", "farm equipment mechanic"]
+        },
+        {
+          "value": "Field service technician",
+          "group": "Equipment",
+          "aliases": [
+            "field service",
+            "road service",
+            "mobile technician",
+            "service truck tech",
+            "field tech",
+            "mobile mechanic"
+          ]
+        },
+        {
+          "value": "Heavy equipment technician",
+          "group": "Equipment",
+          "aliases": [
+            "heavy equipment mechanic",
+            "equipment technician",
+            "construction equipment mechanic",
+            "HEM",
+            "dealer technician",
+            "yellow iron mechanic",
+            "dozer mechanic"
+          ]
+        },
+        {
+          "value": "Rental equipment technician",
+          "group": "Equipment",
+          "aliases": [
+            "rental tech",
+            "rental mechanic",
+            "yard mechanic",
+            "branch technician",
+            "fleet rental tech"
+          ]
+        },
+        {
+          "value": "Shop technician",
+          "group": "Equipment",
+          "aliases": ["shop mechanic", "bench tech", "in shop technician", "shop tech"]
+        },
+        {
+          "value": "Compressed air technician",
+          "group": "Industrial",
+          "aliases": ["air compressor technician", "compressor mechanic", "air tech"]
+        },
+        {
+          "value": "Hydraulic technician",
+          "group": "Industrial",
+          "aliases": [
+            "hydraulics tech",
+            "hydraulic mechanic",
+            "cylinder rebuild",
+            "pump and motor tech"
+          ]
+        },
+        {
+          "value": "Industrial electrician",
+          "group": "Industrial",
+          "aliases": [
+            "electrician",
+            "maintenance electrician",
+            "industrial electrician",
+            "journeyman electrician"
+          ]
+        },
+        {
+          "value": "Machinist",
+          "group": "Industrial",
+          "aliases": ["machinist", "lathe operator", "CNC machinist", "line boring", "machine shop"]
+        },
+        {
+          "value": "Millwright",
+          "group": "Industrial",
+          "aliases": ["millwright", "industrial mechanic", "plant millwright"]
+        },
+        {
+          "value": "Pump technician",
+          "group": "Industrial",
+          "aliases": ["pump tech", "pump mechanic", "dewatering technician"]
+        },
+        {
+          "value": "Welder and fabricator",
+          "group": "Industrial",
+          "aliases": ["welder", "fabricator", "structural welder", "combo welder", "boilermaker"]
+        },
+        {
+          "value": "Lead technician or foreman",
+          "group": "Leadership",
+          "aliases": [
+            "lead tech",
+            "foreman",
+            "shop foreman",
+            "crew lead",
+            "working foreman",
+            "team lead"
+          ]
+        },
+        {
+          "value": "Service manager",
+          "group": "Leadership",
+          "aliases": [
+            "service manager",
+            "shop manager",
+            "service supervisor",
+            "maintenance manager",
+            "fleet manager",
+            "director of maintenance"
+          ]
+        },
+        {
+          "value": "Marine diesel technician",
+          "group": "Marine",
+          "aliases": ["marine mechanic", "marine tech", "boat mechanic", "propulsion technician"]
+        },
+        {
+          "value": "Chiller technician",
+          "group": "Mission critical",
+          "aliases": ["chiller tech", "chiller mechanic", "centrifugal tech", "chiller service"]
+        },
+        {
+          "value": "Controls and BMS technician",
+          "group": "Mission critical",
+          "aliases": [
+            "controls tech",
+            "BMS technician",
+            "BAS tech",
+            "automation technician",
+            "DDC tech",
+            "controls engineer"
+          ]
+        },
+        {
+          "value": "Critical facilities technician",
+          "group": "Mission critical",
+          "aliases": [
+            "CFT",
+            "data center technician",
+            "critical facilities",
+            "DC tech",
+            "facilities technician",
+            "mission critical tech"
+          ]
+        },
+        {
+          "value": "HVAC and refrigeration technician",
+          "group": "Mission critical",
+          "aliases": [
+            "HVAC tech",
+            "HVACR",
+            "building refrigeration",
+            "AC tech",
+            "mechanical technician"
+          ],
+          "notes": "\"Refrigeration tech\" alone maps to Transport refrigeration"
+        },
+        {
+          "value": "Parts manager",
+          "group": "Operations",
+          "aliases": ["parts manager", "parts counter", "parts specialist", "inventory manager"]
+        },
+        {
+          "value": "Service writer",
+          "group": "Operations",
+          "aliases": [
+            "service writer",
+            "service advisor",
+            "service coordinator",
+            "work order clerk"
+          ]
+        },
+        {
+          "value": "Shop dispatcher",
+          "group": "Operations",
+          "aliases": ["dispatcher", "service dispatcher", "scheduler", "maintenance planner"]
+        },
+        {
+          "value": "Field service engineer, power",
+          "group": "Power generation",
+          "aliases": [
+            "FSE",
+            "field service engineer",
+            "startup technician",
+            "commissioning technician",
+            "startup engineer"
+          ]
+        },
+        {
+          "value": "Generator technician",
+          "group": "Power generation",
+          "aliases": [
+            "generator tech",
+            "genset technician",
+            "power generation technician",
+            "power gen tech",
+            "EGSA technician",
+            "standby power tech",
+            "generator mechanic"
+          ]
+        },
+        {
+          "value": "Switchgear technician",
+          "group": "Power generation",
+          "aliases": ["switchgear tech", "paralleling technician", "gear tech", "MV technician"]
+        },
+        {
+          "value": "Bus technician",
+          "group": "Truck and fleet",
+          "aliases": [
+            "bus mechanic",
+            "transit mechanic",
+            "school bus mechanic",
+            "coach technician",
+            "fleet bus tech"
+          ]
+        },
+        {
+          "value": "Diesel technician",
+          "group": "Truck and fleet",
+          "aliases": [
+            "diesel mechanic",
+            "diesel tech",
+            "diesel technician",
+            "heavy truck mechanic",
+            "truck mechanic",
+            "fleet mechanic",
+            "fleet technician",
+            "class 8 mechanic",
+            "semi mechanic",
+            "tractor trailer mechanic"
+          ]
+        },
+        {
+          "value": "Refuse truck technician",
+          "group": "Truck and fleet",
+          "aliases": [
+            "garbage truck mechanic",
+            "refuse mechanic",
+            "packer mechanic",
+            "waste technician",
+            "body mechanic"
+          ]
+        },
+        {
+          "value": "Trailer technician",
+          "group": "Truck and fleet",
+          "aliases": ["trailer mechanic", "trailer tech", "trailer repair", "van repair tech"]
+        },
+        {
+          "value": "Transport refrigeration technician",
+          "group": "Truck and fleet",
+          "aliases": [
+            "reefer tech",
+            "reefer mechanic",
+            "TRU tech",
+            "refrigeration tech",
+            "thermo king tech",
+            "transicold tech"
+          ]
+        },
+        {
+          "value": "Utility line equipment technician",
+          "group": "Utility",
+          "aliases": [
+            "utility mechanic",
+            "line truck mechanic",
+            "digger derrick tech",
+            "bucket truck mechanic",
+            "aerial device technician"
+          ]
+        }
+      ]
+    },
+    "shifts": {
+      "label": "Shifts",
+      "count": 8,
+      "groups": ["Shift"],
+      "values": [
+        {
+          "value": "Days",
+          "group": "Shift",
+          "aliases": [
+            "day shift",
+            "days",
+            "1st shift",
+            "first shift",
+            "mornings",
+            "7 to 3",
+            "6 to 2"
+          ]
+        },
+        {
+          "value": "Four on four off",
+          "group": "Shift",
+          "aliases": [
+            "4 on 4 off",
+            "four on four off",
+            "4x4",
+            "compressed",
+            "12 hour shifts",
+            "12s"
+          ]
+        },
+        {
+          "value": "Nights",
+          "group": "Shift",
+          "aliases": [
+            "nights",
+            "night shift",
+            "3rd shift",
+            "third shift",
+            "graveyard",
+            "overnight",
+            "11 to 7"
+          ]
+        },
+        {
+          "value": "On call",
+          "group": "Shift",
+          "aliases": [
+            "on call",
+            "oncall",
+            "after hours",
+            "emergency call",
+            "standby rotation",
+            "call rotation"
+          ]
+        },
+        {
+          "value": "Rotating",
+          "group": "Shift",
+          "aliases": ["rotating", "rotation", "rotating shift", "DuPont", "Panama", "2-2-3"]
+        },
+        {
+          "value": "Split shift",
+          "group": "Shift",
+          "aliases": ["split shift", "split", "broken shift"]
+        },
+        {
+          "value": "Swing",
+          "group": "Shift",
+          "aliases": [
+            "swing",
+            "swings",
+            "2nd shift",
+            "second shift",
+            "afternoons",
+            "evenings",
+            "3 to 11"
+          ]
+        },
+        {
+          "value": "Weekends",
+          "group": "Shift",
+          "aliases": ["weekends", "weekend shift", "saturday sunday", "weekend warrior"]
+        }
+      ]
+    },
+    "equipment": {
+      "label": "Equipment",
+      "count": 65,
+      "groups": [
+        "Aggregates",
+        "Agriculture",
+        "Alternative fuel",
+        "Bus",
+        "Earthmoving",
+        "Industrial",
+        "Lifting",
+        "Marine",
+        "Mission critical",
+        "On-highway",
+        "Power generation",
+        "Trailers",
+        "Utility",
+        "Waste"
+      ],
+      "values": [
+        {
+          "value": "Conveyors and stackers",
+          "group": "Aggregates",
+          "aliases": [
+            "conveyor",
+            "stacker",
+            "radial stacker",
+            "belt conveyor",
+            "transfer conveyor",
+            "overland belt"
+          ]
+        },
+        {
+          "value": "Crushing and screening plants",
+          "group": "Aggregates",
+          "aliases": [
+            "crusher",
+            "jaw crusher",
+            "cone crusher",
+            "impactor",
+            "screen plant",
+            "screener"
+          ]
+        },
+        {
+          "value": "Drilling equipment",
+          "group": "Aggregates",
+          "aliases": ["drill", "blasthole drill", "rotary drill", "DTH", "down the hole"]
+        },
+        {
+          "value": "Feeders and screens",
+          "group": "Aggregates",
+          "aliases": [
+            "feeder",
+            "grizzly",
+            "vibrating screen",
+            "scalper",
+            "incline screen",
+            "apron feeder"
+          ]
+        },
+        {
+          "value": "Mine hoists",
+          "group": "Aggregates",
+          "aliases": ["hoist", "mine hoist", "shaft hoist", "headframe", "skip hoist"]
+        },
+        {
+          "value": "Portable crushing plants",
+          "group": "Aggregates",
+          "aliases": [
+            "portable plant",
+            "track crusher",
+            "portable crusher",
+            "closed circuit plant",
+            "tracked screener"
+          ]
+        },
+        {
+          "value": "Underground mining equipment",
+          "group": "Aggregates",
+          "aliases": ["LHD", "scoop", "shuttle car", "continuous miner", "roof bolter", "jumbo"]
+        },
+        {
+          "value": "Wash plants",
+          "group": "Aggregates",
+          "aliases": [
+            "wash plant",
+            "washer",
+            "log washer",
+            "sand screw",
+            "classifier",
+            "hydrocyclone",
+            "aggregate washing"
+          ]
+        },
+        {
+          "value": "Agricultural equipment",
+          "group": "Agriculture",
+          "aliases": ["farm tractor", "combine", "sprayer", "planter", "baler", "ag equipment"],
+          "notes": "\"Tractor\" on its own means a Class 8 tractor"
+        },
+        {
+          "value": "Battery electric vehicles",
+          "group": "Alternative fuel",
+          "aliases": [
+            "EV",
+            "electric vehicle",
+            "BEV",
+            "battery electric",
+            "electric bus",
+            "electric truck",
+            "e-truck"
+          ]
+        },
+        {
+          "value": "CNG fuel systems",
+          "group": "Alternative fuel",
+          "aliases": [
+            "CNG",
+            "compressed natural gas",
+            "natural gas",
+            "nat gas",
+            "CNG tank",
+            "cylinder",
+            "NGV"
+          ]
+        },
+        {
+          "value": "EV charging infrastructure",
+          "group": "Alternative fuel",
+          "aliases": ["charger", "charging station", "DC fast charger", "depot charging", "EVSE"]
+        },
+        {
+          "value": "Hybrid drive systems",
+          "group": "Alternative fuel",
+          "aliases": ["hybrid", "hybrid drive", "series hybrid", "parallel hybrid", "e-axle"]
+        },
+        {
+          "value": "Hydrogen fuel cell systems",
+          "group": "Alternative fuel",
+          "aliases": ["hydrogen", "fuel cell", "H2", "FCEV", "fuel cell electric"]
+        },
+        {
+          "value": "LNG fuel systems",
+          "group": "Alternative fuel",
+          "aliases": ["LNG", "liquefied natural gas", "cryogenic tank"]
+        },
+        {
+          "value": "Propane and LPG systems",
+          "group": "Alternative fuel",
+          "aliases": ["propane", "LP", "LPG", "autogas", "forklift propane", "bobtail"]
+        },
+        {
+          "value": "School buses",
+          "group": "Bus",
+          "aliases": ["school bus", "type C", "type D", "Blue Bird", "Thomas", "IC bus"]
+        },
+        {
+          "value": "Transit buses",
+          "group": "Bus",
+          "aliases": ["transit bus", "city bus", "coach", "motorcoach", "articulated bus"]
+        },
+        {
+          "value": "Backhoe loaders",
+          "group": "Earthmoving",
+          "aliases": ["backhoe", "back hoe", "rubber tire backhoe", "tractor loader backhoe", "TLB"]
+        },
+        {
+          "value": "Compaction equipment",
+          "group": "Earthmoving",
+          "aliases": ["roller", "compactor", "vibratory roller", "padfoot", "smooth drum"]
+        },
+        {
+          "value": "Dozers",
+          "group": "Earthmoving",
+          "aliases": ["dozer", "bulldozer", "crawler dozer", "track dozer"]
+        },
+        {
+          "value": "Excavators",
+          "group": "Earthmoving",
+          "aliases": ["excavator", "trackhoe", "track hoe", "hoe", "mini ex", "mini excavator"]
+        },
+        {
+          "value": "Haul trucks",
+          "group": "Earthmoving",
+          "aliases": [
+            "articulated truck",
+            "artic",
+            "rigid haul truck",
+            "off road truck",
+            "rock truck",
+            "dump truck"
+          ]
+        },
+        {
+          "value": "Motor graders",
+          "group": "Earthmoving",
+          "aliases": ["grader", "motor grader", "blade"]
+        },
+        {
+          "value": "Skid steers",
+          "group": "Earthmoving",
+          "aliases": [
+            "skid steer",
+            "skidsteer",
+            "bobcat",
+            "compact track loader",
+            "CTL",
+            "track loader"
+          ]
+        },
+        {
+          "value": "Wheel loaders",
+          "group": "Earthmoving",
+          "aliases": ["loader", "front end loader", "rubber tire loader", "bucket loader"]
+        },
+        {
+          "value": "Air compressors",
+          "group": "Industrial",
+          "aliases": [
+            "compressor",
+            "air comp",
+            "rotary screw",
+            "reciprocating compressor",
+            "portable compressor"
+          ]
+        },
+        {
+          "value": "Light towers",
+          "group": "Industrial",
+          "aliases": ["light tower", "light plant", "tower light"]
+        },
+        {
+          "value": "Pumps",
+          "group": "Industrial",
+          "aliases": [
+            "pump",
+            "dewatering pump",
+            "trash pump",
+            "wellpoint",
+            "bypass pump",
+            "diaphragm pump"
+          ]
+        },
+        {
+          "value": "Stationary industrial engines",
+          "group": "Industrial",
+          "aliases": [
+            "stationary engine",
+            "gas compression",
+            "wellhead engine",
+            "industrial engine"
+          ]
+        },
+        {
+          "value": "Boom lifts",
+          "group": "Lifting",
+          "aliases": [
+            "boom lift",
+            "man lift",
+            "articulating boom",
+            "telescopic boom",
+            "cherry picker",
+            "MEWP"
+          ]
+        },
+        {
+          "value": "Crawler cranes",
+          "group": "Lifting",
+          "aliases": ["crawler crane", "lattice boom", "track crane"]
+        },
+        {
+          "value": "Forklifts",
+          "group": "Lifting",
+          "aliases": [
+            "forklift",
+            "lift truck",
+            "fork truck",
+            "IC forklift",
+            "electric forklift",
+            "reach truck",
+            "order picker",
+            "pallet jack"
+          ]
+        },
+        {
+          "value": "Mobile cranes",
+          "group": "Lifting",
+          "aliases": [
+            "crane",
+            "all terrain crane",
+            "rough terrain crane",
+            "RT crane",
+            "truck crane",
+            "boom truck",
+            "carry deck"
+          ]
+        },
+        {
+          "value": "Scissor lifts",
+          "group": "Lifting",
+          "aliases": ["scissor lift", "scissor", "slab scissor", "rough terrain scissor"]
+        },
+        {
+          "value": "Telehandlers",
+          "group": "Lifting",
+          "aliases": [
+            "telehandler",
+            "reach forklift",
+            "zoom boom",
+            "variable reach",
+            "telescopic handler"
+          ]
+        },
+        {
+          "value": "Tower cranes",
+          "group": "Lifting",
+          "aliases": ["tower crane", "hammerhead", "luffing jib"]
+        },
+        {
+          "value": "Marine engines",
+          "group": "Marine",
+          "aliases": [
+            "marine diesel",
+            "boat engine",
+            "propulsion",
+            "auxiliary engine",
+            "genset marine"
+          ]
+        },
+        {
+          "value": "CRAC and CRAH units",
+          "group": "Mission critical",
+          "aliases": [
+            "CRAC",
+            "CRAH",
+            "computer room air conditioner",
+            "precision cooling",
+            "in row cooling",
+            "fan wall"
+          ]
+        },
+        {
+          "value": "Chillers",
+          "group": "Mission critical",
+          "aliases": [
+            "chiller",
+            "centrifugal chiller",
+            "screw chiller",
+            "air cooled chiller",
+            "water cooled chiller",
+            "magnetic bearing"
+          ]
+        },
+        {
+          "value": "Cooling towers",
+          "group": "Mission critical",
+          "aliases": ["cooling tower", "tower", "evaporative cooler", "fluid cooler", "dry cooler"]
+        },
+        {
+          "value": "Rack PDUs and busway",
+          "group": "Mission critical",
+          "aliases": [
+            "PDU",
+            "power distribution unit",
+            "busway",
+            "remote power panel",
+            "RPP",
+            "whip",
+            "rack power"
+          ]
+        },
+        {
+          "value": "Class 8 tractors",
+          "group": "On-highway",
+          "aliases": [
+            "class 8",
+            "class eight",
+            "semi",
+            "semi truck",
+            "tractor",
+            "road tractor",
+            "over the road",
+            "OTR",
+            "day cab",
+            "sleeper"
+          ]
+        },
+        {
+          "value": "Light duty trucks",
+          "group": "On-highway",
+          "aliases": [
+            "class 3",
+            "class 4",
+            "class 5",
+            "pickup",
+            "service truck",
+            "F-series",
+            "Super Duty"
+          ]
+        },
+        {
+          "value": "Medium duty trucks",
+          "group": "On-highway",
+          "aliases": ["class 6", "class 7", "medium duty", "box truck", "straight truck"],
+          "notes": "\"Bucket truck\" lives under Bucket trucks, not here"
+        },
+        {
+          "value": "Automatic transfer switches",
+          "group": "Power generation",
+          "aliases": ["ATS", "transfer switch", "auto transfer switch"]
+        },
+        {
+          "value": "Mobile generators",
+          "group": "Power generation",
+          "aliases": ["mobile gen", "towable generator", "rental generator", "portable generator"]
+        },
+        {
+          "value": "Prime power generators",
+          "group": "Power generation",
+          "aliases": ["prime power", "continuous duty", "microgrid", "peak shaving"]
+        },
+        {
+          "value": "Standby generators",
+          "group": "Power generation",
+          "aliases": [
+            "generator",
+            "genset",
+            "gen set",
+            "standby gen",
+            "emergency generator",
+            "EPS",
+            "diesel generator"
+          ]
+        },
+        {
+          "value": "Switchgear",
+          "group": "Power generation",
+          "aliases": ["switchgear", "paralleling gear", "distribution gear", "MV switchgear"]
+        },
+        {
+          "value": "UPS systems",
+          "group": "Power generation",
+          "aliases": ["UPS", "uninterruptible power supply", "battery backup", "flywheel UPS"]
+        },
+        {
+          "value": "Dry van trailers",
+          "group": "Trailers",
+          "aliases": ["dry van", "van trailer", "box trailer", "53 foot"]
+        },
+        {
+          "value": "Flatbed trailers",
+          "group": "Trailers",
+          "aliases": ["flatbed", "flat bed", "step deck", "lowboy", "RGN"]
+        },
+        {
+          "value": "Refrigerated trailers",
+          "group": "Trailers",
+          "aliases": ["reefer", "reefers", "refrigerated", "temp control", "cold chain"],
+          "notes": "Reefer unit brands live on the Brands tab"
+        },
+        {
+          "value": "Tanker trailers",
+          "group": "Trailers",
+          "aliases": ["tanker", "tank trailer", "bulk tanker", "pneumatic"]
+        },
+        {
+          "value": "Bucket trucks",
+          "group": "Utility",
+          "aliases": [
+            "bucket truck",
+            "aerial device",
+            "aerial lift truck",
+            "insulated bucket",
+            "double bucket",
+            "over center",
+            "material handler bucket"
+          ],
+          "notes": "The chassis is a truck, the boom is the skilled part"
+        },
+        {
+          "value": "Cable pullers and tensioners",
+          "group": "Utility",
+          "aliases": [
+            "cable puller",
+            "tensioner",
+            "puller tensioner",
+            "reel trailer",
+            "stringing equipment",
+            "bullwheel"
+          ]
+        },
+        {
+          "value": "Digger derricks",
+          "group": "Utility",
+          "aliases": ["digger derrick", "digger", "derrick truck", "pole setter", "pole truck"]
+        },
+        {
+          "value": "Directional drills",
+          "group": "Utility",
+          "aliases": [
+            "directional drill",
+            "HDD",
+            "horizontal directional drill",
+            "bore machine",
+            "boring machine",
+            "locator",
+            "mud mixer"
+          ]
+        },
+        {
+          "value": "Line trucks",
+          "group": "Utility",
+          "aliases": ["line truck", "lineman truck", "utility line truck", "service line truck"]
+        },
+        {
+          "value": "Pressure diggers",
+          "group": "Utility",
+          "aliases": ["pressure digger", "auger truck", "earth auger"]
+        },
+        {
+          "value": "Trenchers",
+          "group": "Utility",
+          "aliases": [
+            "trencher",
+            "chain trencher",
+            "wheel trencher",
+            "rock saw",
+            "ride on trencher"
+          ]
+        },
+        {
+          "value": "Refuse trucks",
+          "group": "Waste",
+          "aliases": [
+            "garbage truck",
+            "trash truck",
+            "packer",
+            "front loader",
+            "rear loader",
+            "side loader",
+            "automated side loader",
+            "ASL",
+            "roll off",
+            "rolloff",
+            "hook lift"
+          ]
+        },
+        {
+          "value": "Street sweepers",
+          "group": "Waste",
+          "aliases": ["sweeper", "broom truck", "regenerative air"]
+        },
+        {
+          "value": "Vacuum trucks",
+          "group": "Waste",
+          "aliases": [
+            "vac truck",
+            "hydroexcavator",
+            "hydrovac",
+            "combination unit",
+            "jetter",
+            "sewer truck"
+          ]
+        }
+      ]
+    },
+    "brands": {
+      "label": "Brands",
+      "count": 125,
+      "groups": [
+        "Aggregates",
+        "Alternative fuel",
+        "Brakes",
+        "Drivetrain",
+        "Engine",
+        "Engine, Equipment",
+        "Engine, Equipment, Agriculture",
+        "Engine, Equipment, Power",
+        "Engine, Forklift",
+        "Engine, Power",
+        "Engine, Truck",
+        "Engine, Truck, Equipment",
+        "Equipment",
+        "Equipment, Agriculture",
+        "Equipment, Lifting",
+        "Forklift",
+        "Industrial",
+        "Lifting",
+        "Mission critical",
+        "Power",
+        "Reefer",
+        "Refuse body",
+        "Truck",
+        "Utility"
+      ],
+      "values": [
+        {
+          "value": "Astec",
+          "group": "Aggregates",
+          "aliases": ["astec", "roadtec"]
+        },
+        {
+          "value": "Eagle Crusher",
+          "group": "Aggregates",
+          "aliases": ["eagle crusher", "eagle"]
+        },
+        {
+          "value": "Epiroc",
+          "group": "Aggregates",
+          "aliases": ["epiroc", "atlas copco mining", "boomer", "scooptram"]
+        },
+        {
+          "value": "KPI-JCI",
+          "group": "Aggregates",
+          "aliases": ["KPI", "kpi jci", "kpijci", "kolberg", "pioneer"]
+        },
+        {
+          "value": "Kleemann",
+          "group": "Aggregates",
+          "aliases": ["kleemann", "cleeman", "wirtgen group crusher"]
+        },
+        {
+          "value": "McCloskey",
+          "group": "Aggregates",
+          "aliases": ["mccloskey", "mc closkey", "metso outotec portable"]
+        },
+        {
+          "value": "Metso",
+          "group": "Aggregates",
+          "aliases": ["metso", "nordberg", "lokotrack"]
+        },
+        {
+          "value": "Powerscreen",
+          "group": "Aggregates",
+          "aliases": ["powerscreen", "power screen"]
+        },
+        {
+          "value": "Sandvik",
+          "group": "Aggregates",
+          "aliases": ["sandvik", "QJ", "UH"]
+        },
+        {
+          "value": "Superior Industries",
+          "group": "Aggregates",
+          "aliases": ["superior", "superior industries", "superior conveyor"]
+        },
+        {
+          "value": "Telsmith",
+          "group": "Aggregates",
+          "aliases": ["telsmith", "tel smith"]
+        },
+        {
+          "value": "Wirtgen",
+          "group": "Aggregates",
+          "aliases": ["wirtgen", "W series", "milling machine"]
+        },
+        {
+          "value": "BYD",
+          "group": "Alternative fuel",
+          "aliases": ["BYD", "build your dreams"]
+        },
+        {
+          "value": "Hexagon Agility",
+          "group": "Alternative fuel",
+          "aliases": [
+            "agility",
+            "agility fuel",
+            "agility fuel solutions",
+            "hexagon",
+            "hexagon agility"
+          ]
+        },
+        {
+          "value": "Nikola",
+          "group": "Alternative fuel",
+          "aliases": ["nikola", "nikola tre"]
+        },
+        {
+          "value": "Proterra",
+          "group": "Alternative fuel",
+          "aliases": ["proterra"]
+        },
+        {
+          "value": "Quantum Fuel Systems",
+          "group": "Alternative fuel",
+          "aliases": ["quantum", "quantum fuel"]
+        },
+        {
+          "value": "Westport",
+          "group": "Alternative fuel",
+          "aliases": ["westport", "westport fuel systems", "HPDI"]
+        },
+        {
+          "value": "Bendix",
+          "group": "Brakes",
+          "aliases": ["bendix", "EC-60", "air disc"]
+        },
+        {
+          "value": "Haldex",
+          "group": "Brakes",
+          "aliases": ["haldex", "haldex brake"]
+        },
+        {
+          "value": "Wabco",
+          "group": "Brakes",
+          "aliases": ["wabco", "ZF wabco"]
+        },
+        {
+          "value": "Allison",
+          "group": "Drivetrain",
+          "aliases": ["allison", "3000", "4000", "1000", "automatic transmission"]
+        },
+        {
+          "value": "Dana",
+          "group": "Drivetrain",
+          "aliases": ["dana", "spicer", "dana spicer"]
+        },
+        {
+          "value": "Eaton Fuller",
+          "group": "Drivetrain",
+          "aliases": [
+            "eaton fuller",
+            "fuller",
+            "10 speed",
+            "13 speed",
+            "18 speed",
+            "Endurant",
+            "UltraShift"
+          ]
+        },
+        {
+          "value": "Meritor",
+          "group": "Drivetrain",
+          "aliases": ["meritor", "rockwell", "MT40", "differential carrier"]
+        },
+        {
+          "value": "ZF",
+          "group": "Drivetrain",
+          "aliases": ["ZF", "traxon", "powerline"]
+        },
+        {
+          "value": "Cummins",
+          "group": "Engine",
+          "aliases": [
+            "cummins",
+            "cumins",
+            "cummings",
+            "ISX",
+            "X15",
+            "ISB",
+            "ISL",
+            "QSB",
+            "QSK",
+            "L9",
+            "B6.7"
+          ]
+        },
+        {
+          "value": "Detroit Diesel",
+          "group": "Engine",
+          "aliases": [
+            "detroit",
+            "detroit diesel",
+            "DD13",
+            "DD15",
+            "DD16",
+            "series 60",
+            "S60",
+            "DD5",
+            "DD8"
+          ]
+        },
+        {
+          "value": "Deutz",
+          "group": "Engine",
+          "aliases": ["deutz", "TCD", "BF4M", "BF6M"]
+        },
+        {
+          "value": "Mercedes-Benz",
+          "group": "Engine",
+          "aliases": ["mercedes", "daimler", "MBE900", "MBE4000", "OM906"]
+        },
+        {
+          "value": "Paccar",
+          "group": "Engine",
+          "aliases": ["paccar", "MX-13", "MX-11", "MX13", "MX11"]
+        },
+        {
+          "value": "Perkins",
+          "group": "Engine",
+          "aliases": ["perkins", "1104", "1106", "2206", "400 series"]
+        },
+        {
+          "value": "Waukesha",
+          "group": "Engine",
+          "aliases": ["waukesha", "VHP", "VGF", "APG"]
+        },
+        {
+          "value": "Yanmar",
+          "group": "Engine",
+          "aliases": ["yanmar", "4TNV", "3TNV"]
+        },
+        {
+          "value": "Kubota",
+          "group": "Engine, Equipment",
+          "aliases": ["kubota", "V2403", "V3800", "D902"]
+        },
+        {
+          "value": "John Deere",
+          "group": "Engine, Equipment, Agriculture",
+          "aliases": ["deere", "john deere", "JD", "PowerTech", "4045", "6068", "6090"]
+        },
+        {
+          "value": "Caterpillar",
+          "group": "Engine, Equipment, Power",
+          "aliases": [
+            "cat",
+            "caterpillar",
+            "CAT",
+            "C7",
+            "C9",
+            "C13",
+            "C15",
+            "C18",
+            "3406",
+            "3512",
+            "3516"
+          ]
+        },
+        {
+          "value": "Mitsubishi",
+          "group": "Engine, Forklift",
+          "aliases": ["mitsubishi", "S4S", "S6S", "6D16"]
+        },
+        {
+          "value": "MTU",
+          "group": "Engine, Power",
+          "aliases": ["MTU", "MTU Onsite", "Rolls Royce Power", "4000 series", "2000 series"]
+        },
+        {
+          "value": "Hino",
+          "group": "Engine, Truck",
+          "aliases": ["hino", "J08E", "J05E"]
+        },
+        {
+          "value": "International",
+          "group": "Engine, Truck",
+          "aliases": ["international", "navistar", "IH", "A26", "MaxxForce", "DT466", "LT", "HX"]
+        },
+        {
+          "value": "Isuzu",
+          "group": "Engine, Truck",
+          "aliases": ["isuzu", "4HK1", "6HK1", "NPR", "NQR", "FTR"]
+        },
+        {
+          "value": "Mack",
+          "group": "Engine, Truck",
+          "aliases": ["mack", "MP7", "MP8", "MP10", "Anthem", "Granite", "LR", "Pinnacle"]
+        },
+        {
+          "value": "Volvo",
+          "group": "Engine, Truck, Equipment",
+          "aliases": ["volvo", "D11", "D13", "D16", "VNL", "VHD", "Volvo CE"]
+        },
+        {
+          "value": "Bobcat",
+          "group": "Equipment",
+          "aliases": ["bobcat", "S650", "T770", "E50"],
+          "notes": "Also a common generic word for skid steers"
+        },
+        {
+          "value": "Develon",
+          "group": "Equipment",
+          "aliases": ["develon", "doosan", "DX", "DL"]
+        },
+        {
+          "value": "Ditch Witch",
+          "group": "Equipment",
+          "aliases": ["ditch witch", "JT", "witch"]
+        },
+        {
+          "value": "Hitachi",
+          "group": "Equipment",
+          "aliases": ["hitachi", "ZX", "Zaxis"]
+        },
+        {
+          "value": "JCB",
+          "group": "Equipment",
+          "aliases": ["JCB", "3CX", "4CX", "Loadall"]
+        },
+        {
+          "value": "Komatsu",
+          "group": "Equipment",
+          "aliases": ["komatsu", "PC", "WA", "D65", "D155", "HM"]
+        },
+        {
+          "value": "Takeuchi",
+          "group": "Equipment",
+          "aliases": ["takeuchi", "TL", "TB"]
+        },
+        {
+          "value": "Vermeer",
+          "group": "Equipment",
+          "aliases": ["vermeer", "chipper", "grinder"]
+        },
+        {
+          "value": "Case",
+          "group": "Equipment, Agriculture",
+          "aliases": ["case", "case CE", "case IH", "case CX", "SR", "580"]
+        },
+        {
+          "value": "New Holland",
+          "group": "Equipment, Agriculture",
+          "aliases": ["new holland", "NH", "CR", "NH T7"]
+        },
+        {
+          "value": "Liebherr",
+          "group": "Equipment, Lifting",
+          "aliases": ["liebherr", "LTM", "R9", "PR"]
+        },
+        {
+          "value": "Terex",
+          "group": "Equipment, Lifting",
+          "aliases": ["terex", "TC"]
+        },
+        {
+          "value": "Clark",
+          "group": "Forklift",
+          "aliases": ["clark", "C25", "GTS"]
+        },
+        {
+          "value": "Crown",
+          "group": "Forklift",
+          "aliases": ["crown", "RR", "SC", "PE"]
+        },
+        {
+          "value": "Hyster",
+          "group": "Forklift",
+          "aliases": ["hyster", "H50", "H80"]
+        },
+        {
+          "value": "Raymond",
+          "group": "Forklift",
+          "aliases": ["raymond", "swing reach"]
+        },
+        {
+          "value": "Toyota",
+          "group": "Forklift",
+          "aliases": ["toyota forklift", "8FGU", "core IC"]
+        },
+        {
+          "value": "Yale",
+          "group": "Forklift",
+          "aliases": ["yale", "GLC", "GDP"]
+        },
+        {
+          "value": "Atlas Copco",
+          "group": "Industrial",
+          "aliases": ["atlas copco", "XAS", "GA"]
+        },
+        {
+          "value": "Ingersoll Rand",
+          "group": "Industrial",
+          "aliases": ["ingersoll", "IR", "doosan portable power", "P185"]
+        },
+        {
+          "value": "Sullair",
+          "group": "Industrial",
+          "aliases": ["sullair", "185", "375", "900"]
+        },
+        {
+          "value": "Wacker Neuson",
+          "group": "Industrial",
+          "aliases": ["wacker", "wacker neuson", "rammer", "plate compactor"]
+        },
+        {
+          "value": "Genie",
+          "group": "Lifting",
+          "aliases": ["genie", "S-series", "Z-series", "GS", "boom"]
+        },
+        {
+          "value": "Grove",
+          "group": "Lifting",
+          "aliases": ["grove", "GMK", "TMS"]
+        },
+        {
+          "value": "Haulotte",
+          "group": "Lifting",
+          "aliases": ["haulotte", "HA", "Compact"]
+        },
+        {
+          "value": "JLG",
+          "group": "Lifting",
+          "aliases": ["JLG", "600S", "1930ES", "450AJ"]
+        },
+        {
+          "value": "Link-Belt",
+          "group": "Lifting",
+          "aliases": ["link belt", "linkbelt", "LB", "RTC", "HTC"]
+        },
+        {
+          "value": "Manitou",
+          "group": "Lifting",
+          "aliases": ["manitou", "MT", "MLT"]
+        },
+        {
+          "value": "Manitowoc",
+          "group": "Lifting",
+          "aliases": ["manitowoc", "MLC", "999", "16000"]
+        },
+        {
+          "value": "National Crane",
+          "group": "Lifting",
+          "aliases": ["national crane", "NBT"]
+        },
+        {
+          "value": "Skyjack",
+          "group": "Lifting",
+          "aliases": ["skyjack", "SJ", "SJIII"]
+        },
+        {
+          "value": "Tadano",
+          "group": "Lifting",
+          "aliases": ["tadano", "GR", "ATF"]
+        },
+        {
+          "value": "Airedale",
+          "group": "Mission critical",
+          "aliases": ["airedale", "airdale"]
+        },
+        {
+          "value": "Automated Logic",
+          "group": "Mission critical",
+          "aliases": ["automated logic", "ALC", "webctrl brand"]
+        },
+        {
+          "value": "Carrier",
+          "group": "Mission critical",
+          "aliases": ["carrier commercial", "carrier chiller", "carrier HVAC"],
+          "notes": "Bare \"Carrier\" is ambiguous. If the context is buildings it is this one"
+        },
+        {
+          "value": "Daikin Applied",
+          "group": "Mission critical",
+          "aliases": ["daikin", "daikin applied", "mcquay"]
+        },
+        {
+          "value": "Honeywell",
+          "group": "Mission critical",
+          "aliases": ["honeywell", "honey well"]
+        },
+        {
+          "value": "Johnson Controls",
+          "group": "Mission critical",
+          "aliases": ["JCI", "johnson controls", "johnson"]
+        },
+        {
+          "value": "Liebert",
+          "group": "Mission critical",
+          "aliases": ["liebert", "lieburt", "leebert"],
+          "notes": "Vertiv's cooling and UPS line"
+        },
+        {
+          "value": "Munters",
+          "group": "Mission critical",
+          "aliases": ["munters"]
+        },
+        {
+          "value": "Siemens",
+          "group": "Mission critical",
+          "aliases": ["siemens", "seimens"]
+        },
+        {
+          "value": "Stulz",
+          "group": "Mission critical",
+          "aliases": ["stulz", "stultz"]
+        },
+        {
+          "value": "Trane",
+          "group": "Mission critical",
+          "aliases": ["trane", "train chiller"]
+        },
+        {
+          "value": "York",
+          "group": "Mission critical",
+          "aliases": ["york", "york chiller", "JCI york"]
+        },
+        {
+          "value": "ASCO",
+          "group": "Power",
+          "aliases": ["ASCO", "7000 series", "series 300"]
+        },
+        {
+          "value": "Blue Star Power",
+          "group": "Power",
+          "aliases": ["blue star", "bluestar"]
+        },
+        {
+          "value": "Cummins Power",
+          "group": "Power",
+          "aliases": ["cummins power", "onan", "QSK generator"]
+        },
+        {
+          "value": "Eaton",
+          "group": "Power",
+          "aliases": ["eaton", "cutler hammer", "93PM", "powerware"]
+        },
+        {
+          "value": "Generac",
+          "group": "Power",
+          "aliases": ["generac", "guardian", "industrial generator", "MDG"]
+        },
+        {
+          "value": "Kohler",
+          "group": "Power",
+          "aliases": ["kohler", "KD", "KG"]
+        },
+        {
+          "value": "Marathon",
+          "group": "Power",
+          "aliases": ["marathon", "magnamax", "marathon electric"]
+        },
+        {
+          "value": "Russelectric",
+          "group": "Power",
+          "aliases": ["russelectric", "RPTCS"]
+        },
+        {
+          "value": "Schneider Electric",
+          "group": "Power",
+          "aliases": ["schneider", "square D", "APC", "galaxy"]
+        },
+        {
+          "value": "Stamford",
+          "group": "Power",
+          "aliases": ["stamford", "newage", "stamford AVR"]
+        },
+        {
+          "value": "Taylor Power",
+          "group": "Power",
+          "aliases": ["taylor power", "taylor"]
+        },
+        {
+          "value": "Vertiv",
+          "group": "Power",
+          "aliases": ["vertiv", "NXL", "trinergy"]
+        },
+        {
+          "value": "Carrier Transicold",
+          "group": "Reefer",
+          "aliases": [
+            "transicold",
+            "carrier transicold",
+            "carrier reefer",
+            "vector",
+            "supra",
+            "X4"
+          ],
+          "notes": "Bare \"Carrier\" is ambiguous. If the context is trucks it is this one"
+        },
+        {
+          "value": "Thermo King",
+          "group": "Reefer",
+          "aliases": ["thermo king", "TK", "precedent", "SB", "SLX"]
+        },
+        {
+          "value": "Galbreath",
+          "group": "Refuse body",
+          "aliases": ["galbreath", "roll off hoist"]
+        },
+        {
+          "value": "Heil",
+          "group": "Refuse body",
+          "aliases": ["heil", "half pack", "python", "rapid rail"]
+        },
+        {
+          "value": "Labrie",
+          "group": "Refuse body",
+          "aliases": ["labrie", "automizer", "expert"]
+        },
+        {
+          "value": "McNeilus",
+          "group": "Refuse body",
+          "aliases": ["mcneilus", "ZR", "atlantic", "meridian"]
+        },
+        {
+          "value": "New Way",
+          "group": "Refuse body",
+          "aliases": ["new way", "sidewinder", "cobra", "mammoth"]
+        },
+        {
+          "value": "Palfinger",
+          "group": "Refuse body",
+          "aliases": ["palfinger", "PAL", "hooklift"]
+        },
+        {
+          "value": "Autocar",
+          "group": "Truck",
+          "aliases": ["autocar", "ACX", "DC-64", "Xpeditor"]
+        },
+        {
+          "value": "Ford",
+          "group": "Truck",
+          "aliases": [
+            "ford",
+            "F650",
+            "F750",
+            "F550",
+            "F350",
+            "Super Duty",
+            "6.7 Powerstroke",
+            "powerstroke"
+          ]
+        },
+        {
+          "value": "Freightliner",
+          "group": "Truck",
+          "aliases": ["freightliner", "FL", "Cascadia", "M2", "114SD", "122SD", "Columbia"]
+        },
+        {
+          "value": "GM",
+          "group": "Truck",
+          "aliases": ["chevy", "chevrolet", "GMC", "GM", "Duramax", "Silverado", "Sierra"]
+        },
+        {
+          "value": "Kenworth",
+          "group": "Truck",
+          "aliases": ["kenworth", "KW", "T680", "T880", "W900", "T370", "T800"]
+        },
+        {
+          "value": "Peterbilt",
+          "group": "Truck",
+          "aliases": ["peterbilt", "pete", "579", "389", "567", "520", "348"]
+        },
+        {
+          "value": "Ram",
+          "group": "Truck",
+          "aliases": ["ram", "dodge", "5500", "4500", "3500", "6.7 Cummins"]
+        },
+        {
+          "value": "Western Star",
+          "group": "Truck",
+          "aliases": ["western star", "WS", "4900", "47X", "49X", "57X"]
+        },
+        {
+          "value": "Altec",
+          "group": "Utility",
+          "aliases": ["altec", "altech", "altec industries"]
+        },
+        {
+          "value": "American Augers",
+          "group": "Utility",
+          "aliases": ["american augers", "AA drill"]
+        },
+        {
+          "value": "Condux",
+          "group": "Utility",
+          "aliases": ["condux", "condux tesmec"]
+        },
+        {
+          "value": "Custom Truck One Source",
+          "group": "Utility",
+          "aliases": ["custom truck", "CTOS", "custom truck one source", "load king"]
+        },
+        {
+          "value": "Elliott",
+          "group": "Utility",
+          "aliases": ["elliott", "elliott equipment", "boomtruck elliott"]
+        },
+        {
+          "value": "Posi-Plus",
+          "group": "Utility",
+          "aliases": ["posi plus", "posiplus"]
+        },
+        {
+          "value": "Sherman + Reilly",
+          "group": "Utility",
+          "aliases": ["sherman reilly", "sherman and reilly", "S+R", "puller brand"]
+        },
+        {
+          "value": "Terex Utilities",
+          "group": "Utility",
+          "aliases": ["terex utilities", "terex hi ranger", "hi ranger", "hiranger"]
+        },
+        {
+          "value": "Versalift",
+          "group": "Utility",
+          "aliases": ["versalift", "versa lift", "time manufacturing"]
+        }
+      ]
+    },
+    "diag_software": {
+      "label": "Diagnostic software",
+      "count": 50,
+      "groups": [
+        "Alternative fuel",
+        "Brakes",
+        "Drivetrain",
+        "Engine",
+        "Engine, Equipment",
+        "Equipment",
+        "Forklift",
+        "Lifting",
+        "Mission critical",
+        "Multi-brand",
+        "Power",
+        "Reefer",
+        "Truck"
+      ],
+      "values": [
+        {
+          "value": "OEM proprietary EV or alt fuel tool",
+          "group": "Alternative fuel",
+          "aliases": ["EV laptop", "dealer tool", "factory tool", "proprietary tool"],
+          "notes": "Placeholder. Alt fuel and EV tools are OEM specific and change fast, so send these to the Unmapped queue and we will name them as they come in"
+        },
+        {
+          "value": "Bendix ACom",
+          "group": "Brakes",
+          "aliases": ["acom", "bendix acom", "acom pro"]
+        },
+        {
+          "value": "Wabco Toolbox",
+          "group": "Brakes",
+          "aliases": ["toolbox", "wabco toolbox", "meritor wabco toolbox"]
+        },
+        {
+          "value": "Allison DOC",
+          "group": "Drivetrain",
+          "aliases": ["allison DOC", "DOC", "allison doc for pc"]
+        },
+        {
+          "value": "Cummins Guidanz",
+          "group": "Engine",
+          "aliases": ["guidanz", "guidance", "cummins guidanz"]
+        },
+        {
+          "value": "Cummins INSITE",
+          "group": "Engine",
+          "aliases": ["insite", "cummins insite", "in site", "incite"],
+          "notes": "The single most mis-spelled one"
+        },
+        {
+          "value": "Detroit Diesel Diagnostic Link",
+          "group": "Engine",
+          "aliases": ["DDDL", "diagnostic link", "detroit link", "DDRS"]
+        },
+        {
+          "value": "Deutz SerDia",
+          "group": "Engine",
+          "aliases": ["serdia", "deutz serdia"]
+        },
+        {
+          "value": "Kubota Diagmaster",
+          "group": "Engine",
+          "aliases": ["diagmaster", "kubota diagmaster"]
+        },
+        {
+          "value": "Paccar Davie4",
+          "group": "Engine",
+          "aliases": ["davie", "davie4", "davie 4", "paccar davie"]
+        },
+        {
+          "value": "Perkins EST",
+          "group": "Engine",
+          "aliases": ["perkins EST", "perkins electronic service tool"]
+        },
+        {
+          "value": "Caterpillar ET",
+          "group": "Engine, Equipment",
+          "aliases": ["cat ET", "electronic technician", "CAT ET", "cat et 2024"]
+        },
+        {
+          "value": "Bobcat Service Analyzer",
+          "group": "Equipment",
+          "aliases": ["service analyzer", "bobcat analyzer"]
+        },
+        {
+          "value": "Case eService",
+          "group": "Equipment",
+          "aliases": ["eservice", "case eservice", "case EST"]
+        },
+        {
+          "value": "Caterpillar SIS",
+          "group": "Equipment",
+          "aliases": ["SIS", "SIS2", "cat SIS", "service information system"]
+        },
+        {
+          "value": "Develon DMS",
+          "group": "Equipment",
+          "aliases": ["DMS", "doosan DMS", "develon DMS"]
+        },
+        {
+          "value": "Hitachi Dr. ZX",
+          "group": "Equipment",
+          "aliases": ["dr zx", "doctor ZX", "hitachi diagnostics"]
+        },
+        {
+          "value": "JCB ServiceMaster",
+          "group": "Equipment",
+          "aliases": ["servicemaster", "JCB servicemaster"]
+        },
+        {
+          "value": "John Deere Service Advisor",
+          "group": "Equipment",
+          "aliases": ["service advisor", "JD service advisor", "deere SA"]
+        },
+        {
+          "value": "Komatsu CSS",
+          "group": "Equipment",
+          "aliases": ["CSS", "komatsu CSS", "KomTrax", "komtrax"]
+        },
+        {
+          "value": "New Holland EST",
+          "group": "Equipment",
+          "aliases": ["new holland EST", "NH EST", "electronic service tool"]
+        },
+        {
+          "value": "Hyster Yale PC Service Tool",
+          "group": "Forklift",
+          "aliases": ["PC service tool", "hyster service tool", "yale service tool"]
+        },
+        {
+          "value": "Genie Service Tool",
+          "group": "Lifting",
+          "aliases": ["genie service tool", "genie diagnostics"]
+        },
+        {
+          "value": "JLG Analyzer",
+          "group": "Lifting",
+          "aliases": ["JLG analyzer", "JLG handheld"]
+        },
+        {
+          "value": "Automated Logic WebCTRL",
+          "group": "Mission critical",
+          "aliases": ["webctrl", "web ctrl", "ALC webctrl"]
+        },
+        {
+          "value": "Carrier i-Vu",
+          "group": "Mission critical",
+          "aliases": ["i-vu", "ivu", "carrier ivu"]
+        },
+        {
+          "value": "Johnson Controls Metasys",
+          "group": "Mission critical",
+          "aliases": ["metasys", "JCI metasys", "meta sys"]
+        },
+        {
+          "value": "Siemens Desigo",
+          "group": "Mission critical",
+          "aliases": ["desigo", "siemens desigo", "apogee"]
+        },
+        {
+          "value": "Trane Tracer",
+          "group": "Mission critical",
+          "aliases": ["tracer", "tracer SC", "trane tracer"]
+        },
+        {
+          "value": "Tridium Niagara",
+          "group": "Mission critical",
+          "aliases": ["niagara", "tridium", "niagara 4", "JACE"]
+        },
+        {
+          "value": "Vertiv Environet",
+          "group": "Mission critical",
+          "aliases": ["environet", "vertiv environet", "trellis"]
+        },
+        {
+          "value": "Diesel Laptops",
+          "group": "Multi-brand",
+          "aliases": ["diesel laptops", "DLA", "diesel explorer"]
+        },
+        {
+          "value": "Jaltest",
+          "group": "Multi-brand",
+          "aliases": ["jaltest", "jal test"]
+        },
+        {
+          "value": "Nexiq eTechnician",
+          "group": "Multi-brand",
+          "aliases": [
+            "nexiq",
+            "etechnician",
+            "e technician",
+            "USB link",
+            "USB link 2",
+            "USB link 3"
+          ]
+        },
+        {
+          "value": "Noregon JPRO",
+          "group": "Multi-brand",
+          "aliases": ["JPRO", "jpro", "noregon", "j pro", "professional diagnostics"]
+        },
+        {
+          "value": "Snap-on Verus",
+          "group": "Multi-brand",
+          "aliases": ["verus", "snap on verus", "zeus", "snap-on zeus"]
+        },
+        {
+          "value": "Texa",
+          "group": "Multi-brand",
+          "aliases": ["texa", "texa IDC5", "off highway"]
+        },
+        {
+          "value": "DEIF",
+          "group": "Power",
+          "aliases": ["deif", "AGC", "multi-line"]
+        },
+        {
+          "value": "Generac Diagnostics",
+          "group": "Power",
+          "aliases": ["generac diagnostic", "mobile link", "generac dealer software"]
+        },
+        {
+          "value": "Kohler Decision Maker",
+          "group": "Power",
+          "aliases": ["decision maker", "DEC", "kohler DM", "SiteTech"]
+        },
+        {
+          "value": "PowerCommand",
+          "group": "Power",
+          "aliases": ["powercommand", "PCC", "cummins powercommand", "InPower"]
+        },
+        {
+          "value": "Woodward",
+          "group": "Power",
+          "aliases": ["woodward", "easygen", "GCP"]
+        },
+        {
+          "value": "Carrier Transicold Diagnostics",
+          "group": "Reefer",
+          "aliases": ["carrier diagnostics", "transicold software"]
+        },
+        {
+          "value": "Thermo King WinTrac",
+          "group": "Reefer",
+          "aliases": ["wintrac", "win trac", "thermo king wintrac"]
+        },
+        {
+          "value": "International Diamond Logic Builder",
+          "group": "Truck",
+          "aliases": ["diamond logic", "DLB", "diamond logic builder"]
+        },
+        {
+          "value": "International ServiceMaxx",
+          "group": "Truck",
+          "aliases": ["servicemaxx", "service maxx", "navistar servicemaxx"]
+        },
+        {
+          "value": "Mack Premium Tech Tool",
+          "group": "Truck",
+          "aliases": ["mack PTT", "mack tech tool"]
+        },
+        {
+          "value": "Navistar NED",
+          "group": "Truck",
+          "aliases": ["NED", "navistar engine diagnostics"]
+        },
+        {
+          "value": "Paccar ESA",
+          "group": "Truck",
+          "aliases": ["ESA", "paccar ESA", "electronic service analyst"]
+        },
+        {
+          "value": "Volvo Premium Tech Tool",
+          "group": "Truck",
+          "aliases": ["PTT", "premium tech tool", "volvo PTT", "tech tool"]
+        }
+      ]
+    },
+    "systems": {
+      "label": "Systems",
+      "count": 43,
+      "groups": [
+        "Aggregates",
+        "Alternative fuel",
+        "Chassis",
+        "Comfort",
+        "Compliance",
+        "Drivetrain",
+        "Electrical",
+        "Engine",
+        "Equipment",
+        "Hydraulics",
+        "Industrial",
+        "Leadership",
+        "Lifting",
+        "Mission critical",
+        "Power generation",
+        "Service",
+        "Shop",
+        "Technology",
+        "Utility"
+      ],
+      "values": [
+        {
+          "value": "Conveyor belt splicing",
+          "group": "Aggregates",
+          "aliases": [
+            "belt splice",
+            "splicing",
+            "vulcanizing",
+            "belt repair",
+            "belt tracking",
+            "lacing"
+          ]
+        },
+        {
+          "value": "Crusher wear parts and relining",
+          "group": "Aggregates",
+          "aliases": [
+            "liners",
+            "wear parts",
+            "blow bars",
+            "jaw dies",
+            "mantle",
+            "concave",
+            "relining",
+            "rebuild crusher"
+          ]
+        },
+        {
+          "value": "CNG fuel system inspection",
+          "group": "Alternative fuel",
+          "aliases": ["CNG inspection", "tank inspection", "NGV inspection", "cylinder inspection"]
+        },
+        {
+          "value": "High voltage systems",
+          "group": "Alternative fuel",
+          "aliases": [
+            "high voltage",
+            "HV",
+            "600 volt",
+            "traction battery",
+            "orange cable",
+            "HV safety",
+            "battery pack"
+          ]
+        },
+        {
+          "value": "Air brakes",
+          "group": "Chassis",
+          "aliases": [
+            "air brake",
+            "S cam",
+            "slack adjuster",
+            "air dryer",
+            "foundation brake",
+            "ABS"
+          ]
+        },
+        {
+          "value": "Hydraulic brakes",
+          "group": "Chassis",
+          "aliases": ["hydraulic brake", "disc brake", "caliper", "master cylinder"]
+        },
+        {
+          "value": "Suspension and steering",
+          "group": "Chassis",
+          "aliases": [
+            "suspension",
+            "air ride",
+            "leaf spring",
+            "steering",
+            "king pin",
+            "alignment",
+            "tie rod"
+          ]
+        },
+        {
+          "value": "Tires",
+          "group": "Chassis",
+          "aliases": ["tire", "tires", "tire service", "road service tire"]
+        },
+        {
+          "value": "HVAC",
+          "group": "Comfort",
+          "aliases": [
+            "HVAC",
+            "air conditioning",
+            "A/C",
+            "AC",
+            "climate control",
+            "refrigerant",
+            "134a",
+            "1234yf"
+          ]
+        },
+        {
+          "value": "DOT inspection",
+          "group": "Compliance",
+          "aliases": ["DOT inspection", "annual inspection", "FMCSA inspection", "BIT", "90 day"]
+        },
+        {
+          "value": "Differentials and axles",
+          "group": "Drivetrain",
+          "aliases": [
+            "differential",
+            "diff",
+            "rear end",
+            "axle",
+            "carrier",
+            "driveline",
+            "driveshaft",
+            "u joint"
+          ]
+        },
+        {
+          "value": "Transmissions",
+          "group": "Drivetrain",
+          "aliases": [
+            "transmission",
+            "trans",
+            "manual",
+            "automatic",
+            "automated manual",
+            "clutch",
+            "AMT"
+          ]
+        },
+        {
+          "value": "Electrical and electronics",
+          "group": "Electrical",
+          "aliases": [
+            "electrical",
+            "wiring",
+            "12 volt",
+            "24 volt",
+            "charging",
+            "starting",
+            "alternator",
+            "starter",
+            "multimeter",
+            "schematics",
+            "troubleshooting"
+          ]
+        },
+        {
+          "value": "Aftertreatment",
+          "group": "Engine",
+          "aliases": [
+            "aftertreatment",
+            "after treatment",
+            "DPF",
+            "DEF",
+            "SCR",
+            "EGR",
+            "regen",
+            "emissions",
+            "doser",
+            "7th injector"
+          ]
+        },
+        {
+          "value": "Engine electronics",
+          "group": "Engine",
+          "aliases": ["ECM", "engine control", "sensors", "CAN bus", "J1939", "datalink"]
+        },
+        {
+          "value": "Engine overhaul",
+          "group": "Engine",
+          "aliases": [
+            "overhaul",
+            "inframe",
+            "in frame",
+            "rebuild",
+            "top end",
+            "bottom end",
+            "long block"
+          ]
+        },
+        {
+          "value": "Fuel systems",
+          "group": "Engine",
+          "aliases": [
+            "fuel system",
+            "injectors",
+            "injector",
+            "HPCR",
+            "common rail",
+            "fuel pump",
+            "cam follower"
+          ]
+        },
+        {
+          "value": "Undercarriage",
+          "group": "Equipment",
+          "aliases": ["undercarriage", "tracks", "sprockets", "idlers", "rollers", "track chain"]
+        },
+        {
+          "value": "Hydraulics",
+          "group": "Hydraulics",
+          "aliases": [
+            "hydraulic",
+            "hyd",
+            "cylinders",
+            "hoses",
+            "pilot",
+            "load sense",
+            "high pressure"
+          ]
+        },
+        {
+          "value": "Hydrostatic drive",
+          "group": "Hydraulics",
+          "aliases": ["hydrostatic", "hydro drive", "travel motor", "final drive"]
+        },
+        {
+          "value": "Compressed air systems",
+          "group": "Industrial",
+          "aliases": ["compressed air", "air end", "dryer", "receiver tank", "air audit"]
+        },
+        {
+          "value": "Pump service",
+          "group": "Industrial",
+          "aliases": ["pump service", "mechanical seal", "impeller", "packing"]
+        },
+        {
+          "value": "Shop leadership",
+          "group": "Leadership",
+          "aliases": [
+            "foreman",
+            "lead tech",
+            "supervisor",
+            "service manager",
+            "shop manager",
+            "fleet manager",
+            "maintenance manager"
+          ]
+        },
+        {
+          "value": "Boom and structural repair",
+          "group": "Lifting",
+          "aliases": ["boom repair", "structural", "crack repair", "pins and bushings"]
+        },
+        {
+          "value": "Crane inspection",
+          "group": "Lifting",
+          "aliases": ["crane inspection", "annual crane", "OSHA crane", "wire rope"]
+        },
+        {
+          "value": "BMS and building controls",
+          "group": "Mission critical",
+          "aliases": [
+            "BMS",
+            "BAS",
+            "building automation",
+            "building management",
+            "DDC",
+            "front end"
+          ]
+        },
+        {
+          "value": "Chilled water systems",
+          "group": "Mission critical",
+          "aliases": ["chilled water", "CHW", "primary secondary", "pumps and valves", "water side"]
+        },
+        {
+          "value": "Commissioning and integrated testing",
+          "group": "Mission critical",
+          "aliases": [
+            "commissioning",
+            "Cx",
+            "level 5",
+            "integrated systems test",
+            "IST",
+            "pull the plug",
+            "failure scenario testing"
+          ]
+        },
+        {
+          "value": "Battery and UPS",
+          "group": "Power generation",
+          "aliases": ["battery", "UPS", "VRLA", "lithium", "string", "capacity test"]
+        },
+        {
+          "value": "Controls and PLC",
+          "group": "Power generation",
+          "aliases": ["PLC", "HMI", "SCADA", "Allen Bradley", "genset controls", "automation"]
+        },
+        {
+          "value": "Infrared and predictive",
+          "group": "Power generation",
+          "aliases": [
+            "IR scan",
+            "thermography",
+            "infrared",
+            "oil analysis",
+            "vibration analysis",
+            "predictive"
+          ]
+        },
+        {
+          "value": "Load bank testing",
+          "group": "Power generation",
+          "aliases": ["load bank", "load test", "resistive load", "bank test"]
+        },
+        {
+          "value": "Paralleling",
+          "group": "Power generation",
+          "aliases": ["paralleling", "parallel", "sync", "synchronizing", "load share"]
+        },
+        {
+          "value": "Switchgear maintenance",
+          "group": "Power generation",
+          "aliases": ["switchgear", "breaker", "racking", "MV", "medium voltage", "relay"]
+        },
+        {
+          "value": "Transfer switch service",
+          "group": "Power generation",
+          "aliases": ["ATS service", "transfer switch", "open transition", "closed transition"]
+        },
+        {
+          "value": "Mobile and road service",
+          "group": "Service",
+          "aliases": [
+            "mobile",
+            "road service",
+            "field service",
+            "roadside",
+            "service truck",
+            "breakdown"
+          ]
+        },
+        {
+          "value": "Preventive maintenance",
+          "group": "Service",
+          "aliases": [
+            "PM",
+            "preventive maintenance",
+            "preventative",
+            "service",
+            "oil change",
+            "greasing",
+            "LOF"
+          ]
+        },
+        {
+          "value": "Machining",
+          "group": "Shop",
+          "aliases": ["machining", "lathe", "mill", "line bore", "boring"]
+        },
+        {
+          "value": "Welding and fabrication",
+          "group": "Shop",
+          "aliases": [
+            "welding",
+            "weld",
+            "fab",
+            "fabrication",
+            "MIG",
+            "TIG",
+            "stick",
+            "torch",
+            "plasma"
+          ]
+        },
+        {
+          "value": "Machine control",
+          "group": "Technology",
+          "aliases": ["machine control", "grade control", "Trimble", "Topcon", "3D", "GPS grade"]
+        },
+        {
+          "value": "Telematics",
+          "group": "Technology",
+          "aliases": ["telematics", "GPS", "Samsara", "Geotab", "Omnitracs", "fleet tracking"]
+        },
+        {
+          "value": "Aerial device inspection",
+          "group": "Utility",
+          "aliases": [
+            "aerial inspection",
+            "ANSI inspection",
+            "A92 inspection",
+            "annual boom inspection",
+            "unit inspection"
+          ]
+        },
+        {
+          "value": "Dielectric testing",
+          "group": "Utility",
+          "aliases": [
+            "dielectric test",
+            "dielectric",
+            "hi pot",
+            "hipot",
+            "boom test",
+            "insulation test"
+          ]
+        }
+      ]
+    },
+    "certs": {
+      "label": "Certifications",
+      "count": 65,
+      "groups": [
+        "ASE Advanced",
+        "ASE Auto",
+        "ASE Bus",
+        "ASE Equipment",
+        "ASE Truck",
+        "Compliance",
+        "License",
+        "OEM",
+        "Operator",
+        "Power generation",
+        "Refrigerant",
+        "Safety",
+        "Trade"
+      ],
+      "values": [
+        {
+          "value": "ASE L2 Electronic Diesel Engine Diagnosis",
+          "group": "ASE Advanced",
+          "aliases": ["L2", "ASE L2", "advanced diesel"]
+        },
+        {
+          "value": "ASE L3 Light Duty Hybrid Electric",
+          "group": "ASE Advanced",
+          "aliases": ["L3", "ASE L3", "hybrid cert", "EV cert"]
+        },
+        {
+          "value": "ASE Automobile A1 to A9",
+          "group": "ASE Auto",
+          "aliases": ["A1", "A2", "A3", "A4", "A5", "A6", "A7", "A8", "A9", "ASE auto"]
+        },
+        {
+          "value": "ASE Master Automobile",
+          "group": "ASE Auto",
+          "aliases": ["master auto", "ASE master automobile"]
+        },
+        {
+          "value": "ASE School Bus S Series",
+          "group": "ASE Bus",
+          "aliases": ["S1", "S2", "S3", "S4", "S5", "S6", "S7", "school bus ASE"]
+        },
+        {
+          "value": "ASE Transit Bus H Series",
+          "group": "ASE Bus",
+          "aliases": ["H1", "H2", "H3", "H4", "H5", "H6", "H7", "H8", "transit bus ASE"]
+        },
+        {
+          "value": "ASE Truck Equipment E Series",
+          "group": "ASE Equipment",
+          "aliases": ["E1", "E2", "E3", "truck equipment ASE"]
+        },
+        {
+          "value": "ASE Master Medium Heavy Truck",
+          "group": "ASE Truck",
+          "aliases": ["master truck", "ASE master", "medium heavy master"]
+        },
+        {
+          "value": "ASE T1 Gasoline Engines",
+          "group": "ASE Truck",
+          "aliases": ["T1", "ASE T1"]
+        },
+        {
+          "value": "ASE T2 Diesel Engines",
+          "group": "ASE Truck",
+          "aliases": ["T2", "ASE T2", "diesel engines cert"]
+        },
+        {
+          "value": "ASE T3 Drive Train",
+          "group": "ASE Truck",
+          "aliases": ["T3", "ASE T3"]
+        },
+        {
+          "value": "ASE T4 Brakes",
+          "group": "ASE Truck",
+          "aliases": ["T4", "ASE T4"]
+        },
+        {
+          "value": "ASE T5 Suspension and Steering",
+          "group": "ASE Truck",
+          "aliases": ["T5", "ASE T5"]
+        },
+        {
+          "value": "ASE T6 Electrical and Electronic Systems",
+          "group": "ASE Truck",
+          "aliases": ["T6", "ASE T6"]
+        },
+        {
+          "value": "ASE T7 HVAC",
+          "group": "ASE Truck",
+          "aliases": ["T7", "ASE T7"]
+        },
+        {
+          "value": "ASE T8 Preventive Maintenance Inspection",
+          "group": "ASE Truck",
+          "aliases": ["T8", "ASE T8", "PMI"]
+        },
+        {
+          "value": "ANSI A92 Aerial Device Inspector",
+          "group": "Compliance",
+          "aliases": ["A92", "ANSI inspection", "aerial device inspector", "A10.31"]
+        },
+        {
+          "value": "CSA CNG Fuel System Inspector",
+          "group": "Compliance",
+          "aliases": ["CNG inspector", "NGV inspector", "CSA inspector", "fuel system inspector"]
+        },
+        {
+          "value": "Federal Annual Inspector",
+          "group": "Compliance",
+          "aliases": ["annual inspector", "DOT inspector", "396.19", "qualified inspector"]
+        },
+        {
+          "value": "Federal Brake Inspector",
+          "group": "Compliance",
+          "aliases": ["brake inspector", "396.25", "FMCSA brake"]
+        },
+        {
+          "value": "MSHA Part 46",
+          "group": "Compliance",
+          "aliases": ["MSHA", "part 46", "surface mining"]
+        },
+        {
+          "value": "MSHA Part 48",
+          "group": "Compliance",
+          "aliases": ["part 48", "underground MSHA"]
+        },
+        {
+          "value": "Operator Qualification (OQ)",
+          "group": "Compliance",
+          "aliases": ["OQ", "operator qualification", "pipeline OQ", "covered task"]
+        },
+        {
+          "value": "TWIC Card",
+          "group": "Compliance",
+          "aliases": ["TWIC", "transportation worker ID"]
+        },
+        {
+          "value": "Air Brake qualified",
+          "group": "License",
+          "aliases": ["air brake", "no air brake restriction"]
+        },
+        {
+          "value": "CDL Class A",
+          "group": "License",
+          "aliases": ["class A", "CDL A", "CDL-A"]
+        },
+        {
+          "value": "CDL Class B",
+          "group": "License",
+          "aliases": ["class B", "CDL B", "CDL-B"]
+        },
+        {
+          "value": "CDL Class C",
+          "group": "License",
+          "aliases": ["class C", "CDL C"]
+        },
+        {
+          "value": "Doubles Triples endorsement",
+          "group": "License",
+          "aliases": ["doubles", "triples", "T endorsement"]
+        },
+        {
+          "value": "HazMat endorsement",
+          "group": "License",
+          "aliases": ["hazmat", "H endorsement", "hazardous materials"]
+        },
+        {
+          "value": "Journeyman Electrician License",
+          "group": "License",
+          "aliases": [
+            "journeyman",
+            "journeyman electrician",
+            "electrical license",
+            "master electrician"
+          ]
+        },
+        {
+          "value": "Tanker endorsement",
+          "group": "License",
+          "aliases": ["tanker", "N endorsement"]
+        },
+        {
+          "value": "Allison Certified",
+          "group": "OEM",
+          "aliases": ["allison certified", "allison university"]
+        },
+        {
+          "value": "Altec Certified",
+          "group": "OEM",
+          "aliases": ["altec certified", "altec trained", "altec school"]
+        },
+        {
+          "value": "Carrier Certified",
+          "group": "OEM",
+          "aliases": ["carrier cert", "transicold certified"]
+        },
+        {
+          "value": "Caterpillar Certified",
+          "group": "OEM",
+          "aliases": ["cat certified", "cat dealer tech", "SOS", "cat tech cert"]
+        },
+        {
+          "value": "Cummins Certified",
+          "group": "OEM",
+          "aliases": ["cummins cert", "cummins certified", "cummins platinum"]
+        },
+        {
+          "value": "Detroit Diesel Certified",
+          "group": "OEM",
+          "aliases": ["detroit certified", "DD certified"]
+        },
+        {
+          "value": "Generac Certified",
+          "group": "OEM",
+          "aliases": ["generac certified", "generac dealer tech"]
+        },
+        {
+          "value": "John Deere Certified",
+          "group": "OEM",
+          "aliases": ["deere certified", "JD certified"]
+        },
+        {
+          "value": "Kohler Certified",
+          "group": "OEM",
+          "aliases": ["kohler certified", "kohler dealer tech"]
+        },
+        {
+          "value": "Liebert Certified",
+          "group": "OEM",
+          "aliases": ["liebert certified", "vertiv certified", "liebert trained"]
+        },
+        {
+          "value": "Thermo King Certified",
+          "group": "OEM",
+          "aliases": ["thermo king cert", "TK certified"]
+        },
+        {
+          "value": "Trane Certified",
+          "group": "OEM",
+          "aliases": ["trane certified", "trane trained"]
+        },
+        {
+          "value": "Aerial Lift MEWP Operator",
+          "group": "Operator",
+          "aliases": ["aerial lift", "MEWP", "scissor cert", "boom cert"]
+        },
+        {
+          "value": "Forklift Operator",
+          "group": "Operator",
+          "aliases": ["forklift cert", "powered industrial truck", "1910.178"]
+        },
+        {
+          "value": "NCCCO Crane Inspector",
+          "group": "Operator",
+          "aliases": ["NCCCO inspector", "crane inspector cert"]
+        },
+        {
+          "value": "NCCCO Crane Operator",
+          "group": "Operator",
+          "aliases": ["NCCCO", "CCO", "crane operator cert"]
+        },
+        {
+          "value": "Rigging and Signal Person",
+          "group": "Operator",
+          "aliases": ["rigger", "rigging", "signal person", "qualified rigger"]
+        },
+        {
+          "value": "Certified Data Centre Professional (CDCP)",
+          "group": "Power generation",
+          "aliases": ["CDCP", "data center certified", "EPI certified"]
+        },
+        {
+          "value": "EGSA Certified Technician",
+          "group": "Power generation",
+          "aliases": ["EGSA", "generator tech cert"]
+        },
+        {
+          "value": "NETA Level II Technician",
+          "group": "Power generation",
+          "aliases": [
+            "NETA",
+            "NETA certified",
+            "NETA level 2",
+            "NETA level II",
+            "acceptance testing"
+          ]
+        },
+        {
+          "value": "EPA 608 Universal",
+          "group": "Refrigerant",
+          "aliases": ["EPA 608", "608", "universal", "section 608", "refrigerant cert"]
+        },
+        {
+          "value": "EPA 609 MVAC",
+          "group": "Refrigerant",
+          "aliases": ["EPA 609", "609", "MVAC", "mobile AC cert"]
+        },
+        {
+          "value": "Confined Space",
+          "group": "Safety",
+          "aliases": ["confined space", "permit required"]
+        },
+        {
+          "value": "First Aid and CPR",
+          "group": "Safety",
+          "aliases": ["first aid", "CPR", "AED"]
+        },
+        {
+          "value": "Flagger Certification",
+          "group": "Safety",
+          "aliases": ["flagger", "traffic control", "ATSSA flagger"]
+        },
+        {
+          "value": "HAZWOPER 40 Hour",
+          "group": "Safety",
+          "aliases": ["hazwoper", "40 hour", "HAZWOPER 40"]
+        },
+        {
+          "value": "High Voltage Safety Training",
+          "group": "Safety",
+          "aliases": ["HV safety", "high voltage training", "EV safety"]
+        },
+        {
+          "value": "Lockout Tagout",
+          "group": "Safety",
+          "aliases": ["LOTO", "lockout", "tagout"]
+        },
+        {
+          "value": "NFPA 70E",
+          "group": "Safety",
+          "aliases": ["70E", "NFPA 70E", "arc flash", "electrical safety"]
+        },
+        {
+          "value": "OSHA 10",
+          "group": "Safety",
+          "aliases": ["OSHA 10", "OSHA10", "10 hour"]
+        },
+        {
+          "value": "OSHA 30",
+          "group": "Safety",
+          "aliases": ["OSHA 30", "OSHA30", "30 hour"]
+        },
+        {
+          "value": "Pole Top and Bucket Rescue",
+          "group": "Safety",
+          "aliases": ["pole top rescue", "bucket rescue", "rescue training"]
+        },
+        {
+          "value": "AWS Welding Certification",
+          "group": "Trade",
+          "aliases": ["AWS", "D1.1", "certified welder", "weld cert"]
+        }
+      ]
+    },
+    "cdl_class": {
+      "label": "CDL",
+      "count": 5,
+      "groups": ["CDL class"],
+      "values": [
+        {
+          "value": "Class A",
+          "group": "CDL class",
+          "aliases": ["class A", "CDL A", "A"]
+        },
+        {
+          "value": "Class B",
+          "group": "CDL class",
+          "aliases": ["class B", "CDL B", "B"]
+        },
+        {
+          "value": "Class C",
+          "group": "CDL class",
+          "aliases": ["class C", "CDL C", "C"]
+        },
+        {
+          "value": "None",
+          "group": "CDL class",
+          "aliases": ["no CDL", "none", "n/a", "don't have one"]
+        },
+        {
+          "value": "Permit",
+          "group": "CDL class",
+          "aliases": ["CLP", "permit", "learners permit"]
+        }
+      ]
+    },
+    "own_tools": {
+      "label": "Own tools",
+      "count": 3,
+      "groups": ["Own tools"],
+      "values": [
+        {
+          "value": "Full set",
+          "group": "Own tools",
+          "aliases": ["yes", "full set", "complete set", "own my tools", "fully tooled"]
+        },
+        {
+          "value": "None",
+          "group": "Own tools",
+          "aliases": ["no", "none", "company provides", "shop tools"]
+        },
+        {
+          "value": "Partial set",
+          "group": "Own tools",
+          "aliases": ["partial", "some tools", "basic hand tools", "building my set"]
+        }
+      ]
+    }
+  },
+  "alias_index": {
+    "trade": {
+      "ac tech": "HVAC and refrigeration technician",
+      "aerial device technician": "Utility line equipment technician",
+      "aerial lift technician": "Aerial lift technician",
+      "aerial tech": "Aerial lift technician",
+      "ag mechanic": "Agricultural equipment technician",
+      "ag tech": "Agricultural equipment technician",
+      "aggregates plant mechanic": "Aggregates plant mechanic",
+      "agricultural equipment technician": "Agricultural equipment technician",
+      "air compressor technician": "Compressed air technician",
+      "air tech": "Compressed air technician",
+      "annual crane inspector": "Crane inspector",
+      "apprentice": "Apprentice technician",
+      "apprentice technician": "Apprentice technician",
+      "automation technician": "Controls and BMS technician",
+      "awp tech": "Aerial lift technician",
+      "b tech": "Preventive maintenance technician",
+      "bas tech": "Controls and BMS technician",
+      "bench tech": "Shop technician",
+      "bms technician": "Controls and BMS technician",
+      "boat mechanic": "Marine diesel technician",
+      "body mechanic": "Refuse truck technician",
+      "boilermaker": "Welder and fabricator",
+      "boom lift mechanic": "Aerial lift technician",
+      "branch technician": "Rental equipment technician",
+      "bucket truck mechanic": "Utility line equipment technician",
+      "building refrigeration": "HVAC and refrigeration technician",
+      "bus mechanic": "Bus technician",
+      "bus technician": "Bus technician",
+      "c tech": "Preventive maintenance technician",
+      "centrifugal tech": "Chiller technician",
+      "cft": "Critical facilities technician",
+      "chiller mechanic": "Chiller technician",
+      "chiller service": "Chiller technician",
+      "chiller tech": "Chiller technician",
+      "chiller technician": "Chiller technician",
+      "class 8 mechanic": "Diesel technician",
+      "cnc machinist": "Machinist",
+      "coach technician": "Bus technician",
+      "combo welder": "Welder and fabricator",
+      "commissioning technician": "Field service engineer, power",
+      "compressed air technician": "Compressed air technician",
+      "compressor mechanic": "Compressed air technician",
+      "construction equipment mechanic": "Heavy equipment technician",
+      "controls and bms technician": "Controls and BMS technician",
+      "controls engineer": "Controls and BMS technician",
+      "controls tech": "Controls and BMS technician",
+      "crane field tech": "Crane technician",
+      "crane inspector": "Crane inspector",
+      "crane mechanic": "Crane technician",
+      "crane service technician": "Crane technician",
+      "crane tech": "Crane technician",
+      "crane technician": "Crane technician",
+      "crew lead": "Lead technician or foreman",
+      "critical facilities": "Critical facilities technician",
+      "critical facilities technician": "Critical facilities technician",
+      "crusher mechanic": "Aggregates plant mechanic",
+      "cylinder rebuild": "Hydraulic technician",
+      "data center technician": "Critical facilities technician",
+      "dc tech": "Critical facilities technician",
+      "ddc tech": "Controls and BMS technician",
+      "dealer technician": "Heavy equipment technician",
+      "dewatering technician": "Pump technician",
+      "diesel mechanic": "Diesel technician",
+      "diesel tech": "Diesel technician",
+      "diesel technician": "Diesel technician",
+      "digger derrick tech": "Utility line equipment technician",
+      "director of maintenance": "Service manager",
+      "dispatcher": "Shop dispatcher",
+      "dozer mechanic": "Heavy equipment technician",
+      "egsa technician": "Generator technician",
+      "electrician": "Industrial electrician",
+      "entry level tech": "Apprentice technician",
+      "equipment technician": "Heavy equipment technician",
+      "fabricator": "Welder and fabricator",
+      "facilities technician": "Critical facilities technician",
+      "farm equipment mechanic": "Agricultural equipment technician",
+      "field service": "Field service technician",
+      "field service engineer": "Field service engineer, power",
+      "field service engineer power": "Field service engineer, power",
+      "field service technician": "Field service technician",
+      "field tech": "Field service technician",
+      "fleet bus tech": "Bus technician",
+      "fleet manager": "Service manager",
+      "fleet mechanic": "Diesel technician",
+      "fleet rental tech": "Rental equipment technician",
+      "fleet technician": "Diesel technician",
+      "foreman": "Lead technician or foreman",
+      "forklift mechanic": "Forklift technician",
+      "forklift technician": "Forklift technician",
+      "fse": "Field service engineer, power",
+      "garbage truck mechanic": "Refuse truck technician",
+      "gear tech": "Switchgear technician",
+      "generator mechanic": "Generator technician",
+      "generator tech": "Generator technician",
+      "generator technician": "Generator technician",
+      "genset technician": "Generator technician",
+      "heavy equipment mechanic": "Heavy equipment technician",
+      "heavy equipment technician": "Heavy equipment technician",
+      "heavy truck mechanic": "Diesel technician",
+      "helper": "Apprentice technician",
+      "hem": "Heavy equipment technician",
+      "hvac and refrigeration technician": "HVAC and refrigeration technician",
+      "hvac tech": "HVAC and refrigeration technician",
+      "hvacr": "HVAC and refrigeration technician",
+      "hydraulic mechanic": "Hydraulic technician",
+      "hydraulic technician": "Hydraulic technician",
+      "hydraulics tech": "Hydraulic technician",
+      "in shop technician": "Shop technician",
+      "industrial electrician": "Industrial electrician",
+      "industrial mechanic": "Millwright",
+      "industrial truck mechanic": "Forklift technician",
+      "inventory manager": "Parts manager",
+      "journeyman electrician": "Industrial electrician",
+      "lathe operator": "Machinist",
+      "lead tech": "Lead technician or foreman",
+      "lead technician or foreman": "Lead technician or foreman",
+      "lhd mechanic": "Underground mine mechanic",
+      "lift mechanic": "Aerial lift technician",
+      "lift truck technician": "Forklift technician",
+      "lifting inspector": "Crane inspector",
+      "line boring": "Machinist",
+      "line truck mechanic": "Utility line equipment technician",
+      "lube tech": "Preventive maintenance technician",
+      "lube technician": "Preventive maintenance technician",
+      "machine shop": "Machinist",
+      "machinist": "Machinist",
+      "maintenance electrician": "Industrial electrician",
+      "maintenance manager": "Service manager",
+      "maintenance planner": "Shop dispatcher",
+      "marine diesel technician": "Marine diesel technician",
+      "marine mechanic": "Marine diesel technician",
+      "marine tech": "Marine diesel technician",
+      "material handling tech": "Forklift technician",
+      "mechanical technician": "HVAC and refrigeration technician",
+      "mewp technician": "Aerial lift technician",
+      "millwright": "Millwright",
+      "millwright aggregate": "Aggregates plant mechanic",
+      "mine mechanic": "Underground mine mechanic",
+      "mining technician": "Underground mine mechanic",
+      "mission critical tech": "Critical facilities technician",
+      "mobile mechanic": "Field service technician",
+      "mobile technician": "Field service technician",
+      "mv technician": "Switchgear technician",
+      "nccco inspector": "Crane inspector",
+      "oil change tech": "Preventive maintenance technician",
+      "packer mechanic": "Refuse truck technician",
+      "paralleling technician": "Switchgear technician",
+      "parts counter": "Parts manager",
+      "parts manager": "Parts manager",
+      "parts specialist": "Parts manager",
+      "plant maintenance": "Aggregates plant mechanic",
+      "plant mechanic": "Aggregates plant mechanic",
+      "plant millwright": "Millwright",
+      "plant tech": "Aggregates plant mechanic",
+      "pm tech": "Preventive maintenance technician",
+      "pm technician": "Preventive maintenance technician",
+      "power gen tech": "Generator technician",
+      "power generation technician": "Generator technician",
+      "preventive maintenance technician": "Preventive maintenance technician",
+      "propulsion technician": "Marine diesel technician",
+      "pump and motor tech": "Hydraulic technician",
+      "pump mechanic": "Pump technician",
+      "pump tech": "Pump technician",
+      "pump technician": "Pump technician",
+      "quarry mechanic": "Aggregates plant mechanic",
+      "reefer mechanic": "Transport refrigeration technician",
+      "reefer tech": "Transport refrigeration technician",
+      "refrigeration tech": "Transport refrigeration technician",
+      "refuse mechanic": "Refuse truck technician",
+      "refuse truck technician": "Refuse truck technician",
+      "rental equipment technician": "Rental equipment technician",
+      "rental mechanic": "Rental equipment technician",
+      "rental tech": "Rental equipment technician",
+      "road service": "Field service technician",
+      "scheduler": "Shop dispatcher",
+      "school bus mechanic": "Bus technician",
+      "semi mechanic": "Diesel technician",
+      "service advisor": "Service writer",
+      "service coordinator": "Service writer",
+      "service dispatcher": "Shop dispatcher",
+      "service manager": "Service manager",
+      "service supervisor": "Service manager",
+      "service truck tech": "Field service technician",
+      "service writer": "Service writer",
+      "shop dispatcher": "Shop dispatcher",
+      "shop foreman": "Lead technician or foreman",
+      "shop helper": "Apprentice technician",
+      "shop manager": "Service manager",
+      "shop mechanic": "Shop technician",
+      "shop tech": "Shop technician",
+      "shop technician": "Shop technician",
+      "standby power tech": "Generator technician",
+      "startup engineer": "Field service engineer, power",
+      "startup technician": "Field service engineer, power",
+      "structural welder": "Welder and fabricator",
+      "switchgear tech": "Switchgear technician",
+      "switchgear technician": "Switchgear technician",
+      "team lead": "Lead technician or foreman",
+      "tech in training": "Apprentice technician",
+      "thermo king tech": "Transport refrigeration technician",
+      "tractor mechanic": "Agricultural equipment technician",
+      "tractor trailer mechanic": "Diesel technician",
+      "trailer mechanic": "Trailer technician",
+      "trailer repair": "Trailer technician",
+      "trailer tech": "Trailer technician",
+      "trailer technician": "Trailer technician",
+      "trainee": "Apprentice technician",
+      "transicold tech": "Transport refrigeration technician",
+      "transit mechanic": "Bus technician",
+      "transport refrigeration technician": "Transport refrigeration technician",
+      "tru tech": "Transport refrigeration technician",
+      "truck mechanic": "Diesel technician",
+      "underground mechanic": "Underground mine mechanic",
+      "underground mine mechanic": "Underground mine mechanic",
+      "utility line equipment technician": "Utility line equipment technician",
+      "utility mechanic": "Utility line equipment technician",
+      "van repair tech": "Trailer technician",
+      "waste technician": "Refuse truck technician",
+      "welder": "Welder and fabricator",
+      "welder and fabricator": "Welder and fabricator",
+      "work order clerk": "Service writer",
+      "working foreman": "Lead technician or foreman",
+      "yard mechanic": "Rental equipment technician",
+      "yellow iron mechanic": "Heavy equipment technician"
+    },
+    "shifts": {
+      "11 to 7": "Nights",
+      "12 hour shifts": "Four on four off",
+      "12s": "Four on four off",
+      "1st shift": "Days",
+      "2 2 3": "Rotating",
+      "2nd shift": "Swing",
+      "3 to 11": "Swing",
+      "3rd shift": "Nights",
+      "4 on 4 off": "Four on four off",
+      "4x4": "Four on four off",
+      "6 to 2": "Days",
+      "7 to 3": "Days",
+      "after hours": "On call",
+      "afternoons": "Swing",
+      "broken shift": "Split shift",
+      "call rotation": "On call",
+      "compressed": "Four on four off",
+      "day shift": "Days",
+      "days": "Days",
+      "dupont": "Rotating",
+      "emergency call": "On call",
+      "evenings": "Swing",
+      "first shift": "Days",
+      "four on four off": "Four on four off",
+      "graveyard": "Nights",
+      "mornings": "Days",
+      "night shift": "Nights",
+      "nights": "Nights",
+      "on call": "On call",
+      "oncall": "On call",
+      "overnight": "Nights",
+      "panama": "Rotating",
+      "rotating": "Rotating",
+      "rotating shift": "Rotating",
+      "rotation": "Rotating",
+      "saturday sunday": "Weekends",
+      "second shift": "Swing",
+      "split": "Split shift",
+      "split shift": "Split shift",
+      "standby rotation": "On call",
+      "swing": "Swing",
+      "swings": "Swing",
+      "third shift": "Nights",
+      "weekend shift": "Weekends",
+      "weekend warrior": "Weekends",
+      "weekends": "Weekends"
+    },
+    "equipment": {
+      "53 foot": "Dry van trailers",
+      "aerial device": "Bucket trucks",
+      "aerial lift truck": "Bucket trucks",
+      "ag equipment": "Agricultural equipment",
+      "aggregate washing": "Wash plants",
+      "agricultural equipment": "Agricultural equipment",
+      "air comp": "Air compressors",
+      "air compressors": "Air compressors",
+      "air cooled chiller": "Chillers",
+      "all terrain crane": "Mobile cranes",
+      "apron feeder": "Feeders and screens",
+      "artic": "Haul trucks",
+      "articulated bus": "Transit buses",
+      "articulated truck": "Haul trucks",
+      "articulating boom": "Boom lifts",
+      "asl": "Refuse trucks",
+      "ats": "Automatic transfer switches",
+      "auger truck": "Pressure diggers",
+      "auto transfer switch": "Automatic transfer switches",
+      "autogas": "Propane and LPG systems",
+      "automated side loader": "Refuse trucks",
+      "automatic transfer switches": "Automatic transfer switches",
+      "auxiliary engine": "Marine engines",
+      "back hoe": "Backhoe loaders",
+      "backhoe": "Backhoe loaders",
+      "backhoe loaders": "Backhoe loaders",
+      "baler": "Agricultural equipment",
+      "battery backup": "UPS systems",
+      "battery electric": "Battery electric vehicles",
+      "battery electric vehicles": "Battery electric vehicles",
+      "belt conveyor": "Conveyors and stackers",
+      "bev": "Battery electric vehicles",
+      "blade": "Motor graders",
+      "blasthole drill": "Drilling equipment",
+      "blue bird": "School buses",
+      "boat engine": "Marine engines",
+      "bobcat": "Skid steers",
+      "bobtail": "Propane and LPG systems",
+      "boom lift": "Boom lifts",
+      "boom lifts": "Boom lifts",
+      "boom truck": "Mobile cranes",
+      "bore machine": "Directional drills",
+      "boring machine": "Directional drills",
+      "box trailer": "Dry van trailers",
+      "box truck": "Medium duty trucks",
+      "broom truck": "Street sweepers",
+      "bucket loader": "Wheel loaders",
+      "bucket truck": "Bucket trucks",
+      "bucket trucks": "Bucket trucks",
+      "bulk tanker": "Tanker trailers",
+      "bulldozer": "Dozers",
+      "bullwheel": "Cable pullers and tensioners",
+      "busway": "Rack PDUs and busway",
+      "bypass pump": "Pumps",
+      "cable puller": "Cable pullers and tensioners",
+      "cable pullers and tensioners": "Cable pullers and tensioners",
+      "carry deck": "Mobile cranes",
+      "centrifugal chiller": "Chillers",
+      "chain trencher": "Trenchers",
+      "charger": "EV charging infrastructure",
+      "charging station": "EV charging infrastructure",
+      "cherry picker": "Boom lifts",
+      "chiller": "Chillers",
+      "chillers": "Chillers",
+      "city bus": "Transit buses",
+      "class 3": "Light duty trucks",
+      "class 4": "Light duty trucks",
+      "class 5": "Light duty trucks",
+      "class 6": "Medium duty trucks",
+      "class 7": "Medium duty trucks",
+      "class 8": "Class 8 tractors",
+      "class 8 tractors": "Class 8 tractors",
+      "class eight": "Class 8 tractors",
+      "classifier": "Wash plants",
+      "closed circuit plant": "Portable crushing plants",
+      "cng": "CNG fuel systems",
+      "cng fuel systems": "CNG fuel systems",
+      "cng tank": "CNG fuel systems",
+      "coach": "Transit buses",
+      "cold chain": "Refrigerated trailers",
+      "combination unit": "Vacuum trucks",
+      "combine": "Agricultural equipment",
+      "compact track loader": "Skid steers",
+      "compaction equipment": "Compaction equipment",
+      "compactor": "Compaction equipment",
+      "compressed natural gas": "CNG fuel systems",
+      "compressor": "Air compressors",
+      "computer room air conditioner": "CRAC and CRAH units",
+      "cone crusher": "Crushing and screening plants",
+      "continuous duty": "Prime power generators",
+      "continuous miner": "Underground mining equipment",
+      "conveyor": "Conveyors and stackers",
+      "conveyors and stackers": "Conveyors and stackers",
+      "cooling tower": "Cooling towers",
+      "cooling towers": "Cooling towers",
+      "crac": "CRAC and CRAH units",
+      "crac and crah units": "CRAC and CRAH units",
+      "crah": "CRAC and CRAH units",
+      "crane": "Mobile cranes",
+      "crawler crane": "Crawler cranes",
+      "crawler cranes": "Crawler cranes",
+      "crawler dozer": "Dozers",
+      "crusher": "Crushing and screening plants",
+      "crushing and screening plants": "Crushing and screening plants",
+      "cryogenic tank": "LNG fuel systems",
+      "ctl": "Skid steers",
+      "cylinder": "CNG fuel systems",
+      "day cab": "Class 8 tractors",
+      "dc fast charger": "EV charging infrastructure",
+      "depot charging": "EV charging infrastructure",
+      "derrick truck": "Digger derricks",
+      "dewatering pump": "Pumps",
+      "diaphragm pump": "Pumps",
+      "diesel generator": "Standby generators",
+      "digger": "Digger derricks",
+      "digger derrick": "Digger derricks",
+      "digger derricks": "Digger derricks",
+      "directional drill": "Directional drills",
+      "directional drills": "Directional drills",
+      "distribution gear": "Switchgear",
+      "double bucket": "Bucket trucks",
+      "down the hole": "Drilling equipment",
+      "dozer": "Dozers",
+      "dozers": "Dozers",
+      "drill": "Drilling equipment",
+      "drilling equipment": "Drilling equipment",
+      "dry cooler": "Cooling towers",
+      "dry van": "Dry van trailers",
+      "dry van trailers": "Dry van trailers",
+      "dth": "Drilling equipment",
+      "dump truck": "Haul trucks",
+      "e axle": "Hybrid drive systems",
+      "e truck": "Battery electric vehicles",
+      "earth auger": "Pressure diggers",
+      "electric bus": "Battery electric vehicles",
+      "electric forklift": "Forklifts",
+      "electric truck": "Battery electric vehicles",
+      "electric vehicle": "Battery electric vehicles",
+      "emergency generator": "Standby generators",
+      "eps": "Standby generators",
+      "ev": "Battery electric vehicles",
+      "ev charging infrastructure": "EV charging infrastructure",
+      "evaporative cooler": "Cooling towers",
+      "evse": "EV charging infrastructure",
+      "excavator": "Excavators",
+      "excavators": "Excavators",
+      "f series": "Light duty trucks",
+      "fan wall": "CRAC and CRAH units",
+      "farm tractor": "Agricultural equipment",
+      "fcev": "Hydrogen fuel cell systems",
+      "feeder": "Feeders and screens",
+      "feeders and screens": "Feeders and screens",
+      "flat bed": "Flatbed trailers",
+      "flatbed": "Flatbed trailers",
+      "flatbed trailers": "Flatbed trailers",
+      "fluid cooler": "Cooling towers",
+      "flywheel ups": "UPS systems",
+      "fork truck": "Forklifts",
+      "forklift": "Forklifts",
+      "forklift propane": "Propane and LPG systems",
+      "forklifts": "Forklifts",
+      "front end loader": "Wheel loaders",
+      "front loader": "Refuse trucks",
+      "fuel cell": "Hydrogen fuel cell systems",
+      "fuel cell electric": "Hydrogen fuel cell systems",
+      "garbage truck": "Refuse trucks",
+      "gas compression": "Stationary industrial engines",
+      "gen set": "Standby generators",
+      "generator": "Standby generators",
+      "genset": "Standby generators",
+      "genset marine": "Marine engines",
+      "grader": "Motor graders",
+      "grizzly": "Feeders and screens",
+      "h2": "Hydrogen fuel cell systems",
+      "hammerhead": "Tower cranes",
+      "haul trucks": "Haul trucks",
+      "hdd": "Directional drills",
+      "headframe": "Mine hoists",
+      "hoe": "Excavators",
+      "hoist": "Mine hoists",
+      "hook lift": "Refuse trucks",
+      "horizontal directional drill": "Directional drills",
+      "hybrid": "Hybrid drive systems",
+      "hybrid drive": "Hybrid drive systems",
+      "hybrid drive systems": "Hybrid drive systems",
+      "hydrocyclone": "Wash plants",
+      "hydroexcavator": "Vacuum trucks",
+      "hydrogen": "Hydrogen fuel cell systems",
+      "hydrogen fuel cell systems": "Hydrogen fuel cell systems",
+      "hydrovac": "Vacuum trucks",
+      "ic bus": "School buses",
+      "ic forklift": "Forklifts",
+      "impactor": "Crushing and screening plants",
+      "in row cooling": "CRAC and CRAH units",
+      "incline screen": "Feeders and screens",
+      "industrial engine": "Stationary industrial engines",
+      "insulated bucket": "Bucket trucks",
+      "jaw crusher": "Crushing and screening plants",
+      "jetter": "Vacuum trucks",
+      "jumbo": "Underground mining equipment",
+      "lattice boom": "Crawler cranes",
+      "lhd": "Underground mining equipment",
+      "lift truck": "Forklifts",
+      "light duty trucks": "Light duty trucks",
+      "light plant": "Light towers",
+      "light tower": "Light towers",
+      "light towers": "Light towers",
+      "line truck": "Line trucks",
+      "line trucks": "Line trucks",
+      "lineman truck": "Line trucks",
+      "liquefied natural gas": "LNG fuel systems",
+      "lng": "LNG fuel systems",
+      "lng fuel systems": "LNG fuel systems",
+      "loader": "Wheel loaders",
+      "locator": "Directional drills",
+      "log washer": "Wash plants",
+      "lowboy": "Flatbed trailers",
+      "lp": "Propane and LPG systems",
+      "lpg": "Propane and LPG systems",
+      "luffing jib": "Tower cranes",
+      "magnetic bearing": "Chillers",
+      "man lift": "Boom lifts",
+      "marine diesel": "Marine engines",
+      "marine engines": "Marine engines",
+      "material handler bucket": "Bucket trucks",
+      "medium duty": "Medium duty trucks",
+      "medium duty trucks": "Medium duty trucks",
+      "mewp": "Boom lifts",
+      "microgrid": "Prime power generators",
+      "mine hoist": "Mine hoists",
+      "mine hoists": "Mine hoists",
+      "mini ex": "Excavators",
+      "mini excavator": "Excavators",
+      "mobile cranes": "Mobile cranes",
+      "mobile gen": "Mobile generators",
+      "mobile generators": "Mobile generators",
+      "motor grader": "Motor graders",
+      "motor graders": "Motor graders",
+      "motorcoach": "Transit buses",
+      "mud mixer": "Directional drills",
+      "mv switchgear": "Switchgear",
+      "nat gas": "CNG fuel systems",
+      "natural gas": "CNG fuel systems",
+      "ngv": "CNG fuel systems",
+      "off road truck": "Haul trucks",
+      "order picker": "Forklifts",
+      "otr": "Class 8 tractors",
+      "over center": "Bucket trucks",
+      "over the road": "Class 8 tractors",
+      "overland belt": "Conveyors and stackers",
+      "packer": "Refuse trucks",
+      "padfoot": "Compaction equipment",
+      "pallet jack": "Forklifts",
+      "parallel hybrid": "Hybrid drive systems",
+      "paralleling gear": "Switchgear",
+      "pdu": "Rack PDUs and busway",
+      "peak shaving": "Prime power generators",
+      "pickup": "Light duty trucks",
+      "planter": "Agricultural equipment",
+      "pneumatic": "Tanker trailers",
+      "pole setter": "Digger derricks",
+      "pole truck": "Digger derricks",
+      "portable compressor": "Air compressors",
+      "portable crusher": "Portable crushing plants",
+      "portable crushing plants": "Portable crushing plants",
+      "portable generator": "Mobile generators",
+      "portable plant": "Portable crushing plants",
+      "power distribution unit": "Rack PDUs and busway",
+      "precision cooling": "CRAC and CRAH units",
+      "pressure digger": "Pressure diggers",
+      "pressure diggers": "Pressure diggers",
+      "prime power": "Prime power generators",
+      "prime power generators": "Prime power generators",
+      "propane": "Propane and LPG systems",
+      "propane and lpg systems": "Propane and LPG systems",
+      "propulsion": "Marine engines",
+      "puller tensioner": "Cable pullers and tensioners",
+      "pump": "Pumps",
+      "pumps": "Pumps",
+      "rack pdus and busway": "Rack PDUs and busway",
+      "rack power": "Rack PDUs and busway",
+      "radial stacker": "Conveyors and stackers",
+      "reach forklift": "Telehandlers",
+      "reach truck": "Forklifts",
+      "rear loader": "Refuse trucks",
+      "reciprocating compressor": "Air compressors",
+      "reefer": "Refrigerated trailers",
+      "reefers": "Refrigerated trailers",
+      "reel trailer": "Cable pullers and tensioners",
+      "refrigerated": "Refrigerated trailers",
+      "refrigerated trailers": "Refrigerated trailers",
+      "refuse trucks": "Refuse trucks",
+      "regenerative air": "Street sweepers",
+      "remote power panel": "Rack PDUs and busway",
+      "rental generator": "Mobile generators",
+      "rgn": "Flatbed trailers",
+      "ride on trencher": "Trenchers",
+      "rigid haul truck": "Haul trucks",
+      "road tractor": "Class 8 tractors",
+      "rock saw": "Trenchers",
+      "rock truck": "Haul trucks",
+      "roll off": "Refuse trucks",
+      "roller": "Compaction equipment",
+      "rolloff": "Refuse trucks",
+      "roof bolter": "Underground mining equipment",
+      "rotary drill": "Drilling equipment",
+      "rotary screw": "Air compressors",
+      "rough terrain crane": "Mobile cranes",
+      "rough terrain scissor": "Scissor lifts",
+      "rpp": "Rack PDUs and busway",
+      "rt crane": "Mobile cranes",
+      "rubber tire backhoe": "Backhoe loaders",
+      "rubber tire loader": "Wheel loaders",
+      "sand screw": "Wash plants",
+      "scalper": "Feeders and screens",
+      "school bus": "School buses",
+      "school buses": "School buses",
+      "scissor": "Scissor lifts",
+      "scissor lift": "Scissor lifts",
+      "scissor lifts": "Scissor lifts",
+      "scoop": "Underground mining equipment",
+      "screen plant": "Crushing and screening plants",
+      "screener": "Crushing and screening plants",
+      "screw chiller": "Chillers",
+      "semi": "Class 8 tractors",
+      "semi truck": "Class 8 tractors",
+      "series hybrid": "Hybrid drive systems",
+      "service line truck": "Line trucks",
+      "service truck": "Light duty trucks",
+      "sewer truck": "Vacuum trucks",
+      "shaft hoist": "Mine hoists",
+      "shuttle car": "Underground mining equipment",
+      "side loader": "Refuse trucks",
+      "skid steer": "Skid steers",
+      "skid steers": "Skid steers",
+      "skidsteer": "Skid steers",
+      "skip hoist": "Mine hoists",
+      "slab scissor": "Scissor lifts",
+      "sleeper": "Class 8 tractors",
+      "smooth drum": "Compaction equipment",
+      "sprayer": "Agricultural equipment",
+      "stacker": "Conveyors and stackers",
+      "standby gen": "Standby generators",
+      "standby generators": "Standby generators",
+      "stationary engine": "Stationary industrial engines",
+      "stationary industrial engines": "Stationary industrial engines",
+      "step deck": "Flatbed trailers",
+      "straight truck": "Medium duty trucks",
+      "street sweepers": "Street sweepers",
+      "stringing equipment": "Cable pullers and tensioners",
+      "super duty": "Light duty trucks",
+      "sweeper": "Street sweepers",
+      "switchgear": "Switchgear",
+      "tank trailer": "Tanker trailers",
+      "tanker": "Tanker trailers",
+      "tanker trailers": "Tanker trailers",
+      "telehandler": "Telehandlers",
+      "telehandlers": "Telehandlers",
+      "telescopic boom": "Boom lifts",
+      "telescopic handler": "Telehandlers",
+      "temp control": "Refrigerated trailers",
+      "tensioner": "Cable pullers and tensioners",
+      "thomas": "School buses",
+      "tlb": "Backhoe loaders",
+      "towable generator": "Mobile generators",
+      "tower": "Cooling towers",
+      "tower crane": "Tower cranes",
+      "tower cranes": "Tower cranes",
+      "tower light": "Light towers",
+      "track crane": "Crawler cranes",
+      "track crusher": "Portable crushing plants",
+      "track dozer": "Dozers",
+      "track hoe": "Excavators",
+      "track loader": "Skid steers",
+      "tracked screener": "Portable crushing plants",
+      "trackhoe": "Excavators",
+      "tractor": "Class 8 tractors",
+      "tractor loader backhoe": "Backhoe loaders",
+      "transfer conveyor": "Conveyors and stackers",
+      "transfer switch": "Automatic transfer switches",
+      "transit bus": "Transit buses",
+      "transit buses": "Transit buses",
+      "trash pump": "Pumps",
+      "trash truck": "Refuse trucks",
+      "trencher": "Trenchers",
+      "trenchers": "Trenchers",
+      "truck crane": "Mobile cranes",
+      "type c": "School buses",
+      "type d": "School buses",
+      "underground mining equipment": "Underground mining equipment",
+      "uninterruptible power supply": "UPS systems",
+      "ups": "UPS systems",
+      "ups systems": "UPS systems",
+      "utility line truck": "Line trucks",
+      "vac truck": "Vacuum trucks",
+      "vacuum trucks": "Vacuum trucks",
+      "van trailer": "Dry van trailers",
+      "variable reach": "Telehandlers",
+      "vibrating screen": "Feeders and screens",
+      "vibratory roller": "Compaction equipment",
+      "wash plant": "Wash plants",
+      "wash plants": "Wash plants",
+      "washer": "Wash plants",
+      "water cooled chiller": "Chillers",
+      "wellhead engine": "Stationary industrial engines",
+      "wellpoint": "Pumps",
+      "wheel loaders": "Wheel loaders",
+      "wheel trencher": "Trenchers",
+      "whip": "Rack PDUs and busway",
+      "zoom boom": "Telehandlers"
+    },
+    "brands": {
+      "10 speed": "Eaton Fuller",
+      "1000": "Allison",
+      "1104": "Perkins",
+      "1106": "Perkins",
+      "114sd": "Freightliner",
+      "122sd": "Freightliner",
+      "13 speed": "Eaton Fuller",
+      "16000": "Manitowoc",
+      "18 speed": "Eaton Fuller",
+      "185": "Sullair",
+      "1930es": "JLG",
+      "2000 series": "MTU",
+      "2206": "Perkins",
+      "3000": "Allison",
+      "3406": "Caterpillar",
+      "348": "Peterbilt",
+      "3500": "Ram",
+      "3512": "Caterpillar",
+      "3516": "Caterpillar",
+      "375": "Sullair",
+      "389": "Peterbilt",
+      "3cx": "JCB",
+      "3tnv": "Yanmar",
+      "400 series": "Perkins",
+      "4000": "Allison",
+      "4000 series": "MTU",
+      "4045": "John Deere",
+      "4500": "Ram",
+      "450aj": "JLG",
+      "47x": "Western Star",
+      "4900": "Western Star",
+      "49x": "Western Star",
+      "4cx": "JCB",
+      "4hk1": "Isuzu",
+      "4tnv": "Yanmar",
+      "520": "Peterbilt",
+      "5500": "Ram",
+      "567": "Peterbilt",
+      "579": "Peterbilt",
+      "57x": "Western Star",
+      "580": "Case",
+      "6 7 cummins": "Ram",
+      "6 7 powerstroke": "Ford",
+      "600s": "JLG",
+      "6068": "John Deere",
+      "6090": "John Deere",
+      "6d16": "Mitsubishi",
+      "6hk1": "Isuzu",
+      "7000 series": "ASCO",
+      "8fgu": "Toyota",
+      "900": "Sullair",
+      "93pm": "Eaton",
+      "999": "Manitowoc",
+      "a26": "International",
+      "aa drill": "American Augers",
+      "acx": "Autocar",
+      "agility": "Hexagon Agility",
+      "agility fuel": "Hexagon Agility",
+      "agility fuel solutions": "Hexagon Agility",
+      "air disc": "Bendix",
+      "airdale": "Airedale",
+      "airedale": "Airedale",
+      "alc": "Automated Logic",
+      "allison": "Allison",
+      "altec": "Altec",
+      "altec industries": "Altec",
+      "altech": "Altec",
+      "american augers": "American Augers",
+      "anthem": "Mack",
+      "apc": "Schneider Electric",
+      "apg": "Waukesha",
+      "asco": "ASCO",
+      "astec": "Astec",
+      "atf": "Tadano",
+      "atlantic": "McNeilus",
+      "atlas copco": "Atlas Copco",
+      "atlas copco mining": "Epiroc",
+      "autocar": "Autocar",
+      "automated logic": "Automated Logic",
+      "automatic transmission": "Allison",
+      "automizer": "Labrie",
+      "b6 7": "Cummins",
+      "bendix": "Bendix",
+      "bf4m": "Deutz",
+      "bf6m": "Deutz",
+      "blue star": "Blue Star Power",
+      "blue star power": "Blue Star Power",
+      "bluestar": "Blue Star Power",
+      "bobcat": "Bobcat",
+      "boom": "Genie",
+      "boomer": "Epiroc",
+      "boomtruck elliott": "Elliott",
+      "build your dreams": "BYD",
+      "byd": "BYD",
+      "c13": "Caterpillar",
+      "c15": "Caterpillar",
+      "c18": "Caterpillar",
+      "c25": "Clark",
+      "c7": "Caterpillar",
+      "c9": "Caterpillar",
+      "carrier": "Carrier",
+      "carrier chiller": "Carrier",
+      "carrier commercial": "Carrier",
+      "carrier hvac": "Carrier",
+      "carrier reefer": "Carrier Transicold",
+      "carrier transicold": "Carrier Transicold",
+      "cascadia": "Freightliner",
+      "case": "Case",
+      "case ce": "Case",
+      "case cx": "Case",
+      "case ih": "Case",
+      "cat": "Caterpillar",
+      "caterpillar": "Caterpillar",
+      "chevrolet": "GM",
+      "chevy": "GM",
+      "chipper": "Vermeer",
+      "clark": "Clark",
+      "cleeman": "Kleemann",
+      "cobra": "New Way",
+      "columbia": "Freightliner",
+      "compact": "Haulotte",
+      "condux": "Condux",
+      "condux tesmec": "Condux",
+      "core ic": "Toyota",
+      "cr": "New Holland",
+      "crown": "Crown",
+      "ctos": "Custom Truck One Source",
+      "cumins": "Cummins",
+      "cummings": "Cummins",
+      "cummins": "Cummins",
+      "cummins power": "Cummins Power",
+      "custom truck": "Custom Truck One Source",
+      "custom truck one source": "Custom Truck One Source",
+      "cutler hammer": "Eaton",
+      "d11": "Volvo",
+      "d13": "Volvo",
+      "d155": "Komatsu",
+      "d16": "Volvo",
+      "d65": "Komatsu",
+      "d902": "Kubota",
+      "daikin": "Daikin Applied",
+      "daikin applied": "Daikin Applied",
+      "daimler": "Mercedes-Benz",
+      "dana": "Dana",
+      "dana spicer": "Dana",
+      "dc 64": "Autocar",
+      "dd13": "Detroit Diesel",
+      "dd15": "Detroit Diesel",
+      "dd16": "Detroit Diesel",
+      "dd5": "Detroit Diesel",
+      "dd8": "Detroit Diesel",
+      "deere": "John Deere",
+      "detroit": "Detroit Diesel",
+      "detroit diesel": "Detroit Diesel",
+      "deutz": "Deutz",
+      "develon": "Develon",
+      "differential carrier": "Meritor",
+      "ditch witch": "Ditch Witch",
+      "dl": "Develon",
+      "dodge": "Ram",
+      "doosan": "Develon",
+      "doosan portable power": "Ingersoll Rand",
+      "dt466": "International",
+      "duramax": "GM",
+      "dx": "Develon",
+      "e50": "Bobcat",
+      "eagle": "Eagle Crusher",
+      "eagle crusher": "Eagle Crusher",
+      "eaton": "Eaton",
+      "eaton fuller": "Eaton Fuller",
+      "ec 60": "Bendix",
+      "elliott": "Elliott",
+      "elliott equipment": "Elliott",
+      "endurant": "Eaton Fuller",
+      "epiroc": "Epiroc",
+      "expert": "Labrie",
+      "f350": "Ford",
+      "f550": "Ford",
+      "f650": "Ford",
+      "f750": "Ford",
+      "fl": "Freightliner",
+      "ford": "Ford",
+      "freightliner": "Freightliner",
+      "ftr": "Isuzu",
+      "fuller": "Eaton Fuller",
+      "ga": "Atlas Copco",
+      "galaxy": "Schneider Electric",
+      "galbreath": "Galbreath",
+      "gdp": "Yale",
+      "generac": "Generac",
+      "genie": "Genie",
+      "glc": "Yale",
+      "gm": "GM",
+      "gmc": "GM",
+      "gmk": "Grove",
+      "gr": "Tadano",
+      "granite": "Mack",
+      "grinder": "Vermeer",
+      "grove": "Grove",
+      "gs": "Genie",
+      "gts": "Clark",
+      "guardian": "Generac",
+      "h50": "Hyster",
+      "h80": "Hyster",
+      "ha": "Haulotte",
+      "haldex": "Haldex",
+      "haldex brake": "Haldex",
+      "half pack": "Heil",
+      "haulotte": "Haulotte",
+      "heil": "Heil",
+      "hexagon": "Hexagon Agility",
+      "hexagon agility": "Hexagon Agility",
+      "hi ranger": "Terex Utilities",
+      "hino": "Hino",
+      "hiranger": "Terex Utilities",
+      "hitachi": "Hitachi",
+      "hm": "Komatsu",
+      "honey well": "Honeywell",
+      "honeywell": "Honeywell",
+      "hooklift": "Palfinger",
+      "hpdi": "Westport",
+      "htc": "Link-Belt",
+      "hx": "International",
+      "hyster": "Hyster",
+      "ih": "International",
+      "industrial generator": "Generac",
+      "ingersoll": "Ingersoll Rand",
+      "ingersoll rand": "Ingersoll Rand",
+      "international": "International",
+      "ir": "Ingersoll Rand",
+      "isb": "Cummins",
+      "isl": "Cummins",
+      "isuzu": "Isuzu",
+      "isx": "Cummins",
+      "j05e": "Hino",
+      "j08e": "Hino",
+      "jcb": "JCB",
+      "jci": "Johnson Controls",
+      "jci york": "York",
+      "jd": "John Deere",
+      "jlg": "JLG",
+      "john deere": "John Deere",
+      "johnson": "Johnson Controls",
+      "johnson controls": "Johnson Controls",
+      "jt": "Ditch Witch",
+      "kd": "Kohler",
+      "kenworth": "Kenworth",
+      "kg": "Kohler",
+      "kleemann": "Kleemann",
+      "kohler": "Kohler",
+      "kolberg": "KPI-JCI",
+      "komatsu": "Komatsu",
+      "kpi": "KPI-JCI",
+      "kpi jci": "KPI-JCI",
+      "kpijci": "KPI-JCI",
+      "kubota": "Kubota",
+      "kw": "Kenworth",
+      "l9": "Cummins",
+      "labrie": "Labrie",
+      "lb": "Link-Belt",
+      "leebert": "Liebert",
+      "liebert": "Liebert",
+      "liebherr": "Liebherr",
+      "lieburt": "Liebert",
+      "link belt": "Link-Belt",
+      "linkbelt": "Link-Belt",
+      "load king": "Custom Truck One Source",
+      "loadall": "JCB",
+      "lokotrack": "Metso",
+      "lr": "Mack",
+      "lt": "International",
+      "ltm": "Liebherr",
+      "m2": "Freightliner",
+      "mack": "Mack",
+      "magnamax": "Marathon",
+      "mammoth": "New Way",
+      "manitou": "Manitou",
+      "manitowoc": "Manitowoc",
+      "marathon": "Marathon",
+      "marathon electric": "Marathon",
+      "maxxforce": "International",
+      "mbe4000": "Mercedes-Benz",
+      "mbe900": "Mercedes-Benz",
+      "mc closkey": "McCloskey",
+      "mccloskey": "McCloskey",
+      "mcneilus": "McNeilus",
+      "mcquay": "Daikin Applied",
+      "mdg": "Generac",
+      "mercedes": "Mercedes-Benz",
+      "mercedes benz": "Mercedes-Benz",
+      "meridian": "McNeilus",
+      "meritor": "Meritor",
+      "metso": "Metso",
+      "metso outotec portable": "McCloskey",
+      "milling machine": "Wirtgen",
+      "mitsubishi": "Mitsubishi",
+      "mlc": "Manitowoc",
+      "mlt": "Manitou",
+      "mp10": "Mack",
+      "mp7": "Mack",
+      "mp8": "Mack",
+      "mt": "Manitou",
+      "mt40": "Meritor",
+      "mtu": "MTU",
+      "mtu onsite": "MTU",
+      "munters": "Munters",
+      "mx 11": "Paccar",
+      "mx 13": "Paccar",
+      "mx11": "Paccar",
+      "mx13": "Paccar",
+      "national crane": "National Crane",
+      "navistar": "International",
+      "nbt": "National Crane",
+      "new holland": "New Holland",
+      "new way": "New Way",
+      "newage": "Stamford",
+      "nh": "New Holland",
+      "nh t7": "New Holland",
+      "nikola": "Nikola",
+      "nikola tre": "Nikola",
+      "nordberg": "Metso",
+      "npr": "Isuzu",
+      "nqr": "Isuzu",
+      "nxl": "Vertiv",
+      "om906": "Mercedes-Benz",
+      "onan": "Cummins Power",
+      "p185": "Ingersoll Rand",
+      "paccar": "Paccar",
+      "pal": "Palfinger",
+      "palfinger": "Palfinger",
+      "pc": "Komatsu",
+      "pe": "Crown",
+      "perkins": "Perkins",
+      "pete": "Peterbilt",
+      "peterbilt": "Peterbilt",
+      "pinnacle": "Mack",
+      "pioneer": "KPI-JCI",
+      "plate compactor": "Wacker Neuson",
+      "posi plus": "Posi-Plus",
+      "posiplus": "Posi-Plus",
+      "power screen": "Powerscreen",
+      "powerline": "ZF",
+      "powerscreen": "Powerscreen",
+      "powerstroke": "Ford",
+      "powertech": "John Deere",
+      "powerware": "Eaton",
+      "pr": "Liebherr",
+      "precedent": "Thermo King",
+      "proterra": "Proterra",
+      "puller brand": "Sherman + Reilly",
+      "python": "Heil",
+      "qj": "Sandvik",
+      "qsb": "Cummins",
+      "qsk": "Cummins",
+      "qsk generator": "Cummins Power",
+      "quantum": "Quantum Fuel Systems",
+      "quantum fuel": "Quantum Fuel Systems",
+      "quantum fuel systems": "Quantum Fuel Systems",
+      "r9": "Liebherr",
+      "ram": "Ram",
+      "rammer": "Wacker Neuson",
+      "rapid rail": "Heil",
+      "raymond": "Raymond",
+      "roadtec": "Astec",
+      "rockwell": "Meritor",
+      "roll off hoist": "Galbreath",
+      "rolls royce power": "MTU",
+      "rptcs": "Russelectric",
+      "rr": "Crown",
+      "rtc": "Link-Belt",
+      "russelectric": "Russelectric",
+      "s r": "Sherman + Reilly",
+      "s series": "Genie",
+      "s4s": "Mitsubishi",
+      "s60": "Detroit Diesel",
+      "s650": "Bobcat",
+      "s6s": "Mitsubishi",
+      "sandvik": "Sandvik",
+      "sb": "Thermo King",
+      "sc": "Crown",
+      "schneider": "Schneider Electric",
+      "schneider electric": "Schneider Electric",
+      "scooptram": "Epiroc",
+      "seimens": "Siemens",
+      "series 300": "ASCO",
+      "series 60": "Detroit Diesel",
+      "sherman and reilly": "Sherman + Reilly",
+      "sherman reilly": "Sherman + Reilly",
+      "sidewinder": "New Way",
+      "siemens": "Siemens",
+      "sierra": "GM",
+      "silverado": "GM",
+      "sj": "Skyjack",
+      "sjiii": "Skyjack",
+      "skyjack": "Skyjack",
+      "slx": "Thermo King",
+      "spicer": "Dana",
+      "square d": "Schneider Electric",
+      "sr": "Case",
+      "stamford": "Stamford",
+      "stamford avr": "Stamford",
+      "stultz": "Stulz",
+      "stulz": "Stulz",
+      "sullair": "Sullair",
+      "super duty": "Ford",
+      "superior": "Superior Industries",
+      "superior conveyor": "Superior Industries",
+      "superior industries": "Superior Industries",
+      "supra": "Carrier Transicold",
+      "swing reach": "Raymond",
+      "t370": "Kenworth",
+      "t680": "Kenworth",
+      "t770": "Bobcat",
+      "t800": "Kenworth",
+      "t880": "Kenworth",
+      "tadano": "Tadano",
+      "takeuchi": "Takeuchi",
+      "taylor": "Taylor Power",
+      "taylor power": "Taylor Power",
+      "tb": "Takeuchi",
+      "tc": "Terex",
+      "tcd": "Deutz",
+      "tel smith": "Telsmith",
+      "telsmith": "Telsmith",
+      "terex": "Terex",
+      "terex hi ranger": "Terex Utilities",
+      "terex utilities": "Terex Utilities",
+      "thermo king": "Thermo King",
+      "time manufacturing": "Versalift",
+      "tk": "Thermo King",
+      "tl": "Takeuchi",
+      "tms": "Grove",
+      "toyota": "Toyota",
+      "toyota forklift": "Toyota",
+      "train chiller": "Trane",
+      "trane": "Trane",
+      "transicold": "Carrier Transicold",
+      "traxon": "ZF",
+      "trinergy": "Vertiv",
+      "uh": "Sandvik",
+      "ultrashift": "Eaton Fuller",
+      "v2403": "Kubota",
+      "v3800": "Kubota",
+      "vector": "Carrier Transicold",
+      "vermeer": "Vermeer",
+      "versa lift": "Versalift",
+      "versalift": "Versalift",
+      "vertiv": "Vertiv",
+      "vgf": "Waukesha",
+      "vhd": "Volvo",
+      "vhp": "Waukesha",
+      "vnl": "Volvo",
+      "volvo": "Volvo",
+      "volvo ce": "Volvo",
+      "w series": "Wirtgen",
+      "w900": "Kenworth",
+      "wa": "Komatsu",
+      "wabco": "Wabco",
+      "wacker": "Wacker Neuson",
+      "wacker neuson": "Wacker Neuson",
+      "waukesha": "Waukesha",
+      "webctrl brand": "Automated Logic",
+      "western star": "Western Star",
+      "westport": "Westport",
+      "westport fuel systems": "Westport",
+      "wirtgen": "Wirtgen",
+      "wirtgen group crusher": "Kleemann",
+      "witch": "Ditch Witch",
+      "ws": "Western Star",
+      "x15": "Cummins",
+      "x4": "Carrier Transicold",
+      "xas": "Atlas Copco",
+      "xpeditor": "Autocar",
+      "yale": "Yale",
+      "yanmar": "Yanmar",
+      "york": "York",
+      "york chiller": "York",
+      "z series": "Genie",
+      "zaxis": "Hitachi",
+      "zf": "ZF",
+      "zf wabco": "Wabco",
+      "zr": "McNeilus",
+      "zx": "Hitachi"
+    },
+    "diag_software": {
+      "acom": "Bendix ACom",
+      "acom pro": "Bendix ACom",
+      "agc": "DEIF",
+      "alc webctrl": "Automated Logic WebCTRL",
+      "allison doc": "Allison DOC",
+      "allison doc for pc": "Allison DOC",
+      "apogee": "Siemens Desigo",
+      "automated logic webctrl": "Automated Logic WebCTRL",
+      "bendix acom": "Bendix ACom",
+      "bobcat analyzer": "Bobcat Service Analyzer",
+      "bobcat service analyzer": "Bobcat Service Analyzer",
+      "carrier diagnostics": "Carrier Transicold Diagnostics",
+      "carrier i vu": "Carrier i-Vu",
+      "carrier ivu": "Carrier i-Vu",
+      "carrier transicold diagnostics": "Carrier Transicold Diagnostics",
+      "case eservice": "Case eService",
+      "case est": "Case eService",
+      "cat et": "Caterpillar ET",
+      "cat et 2024": "Caterpillar ET",
+      "cat sis": "Caterpillar SIS",
+      "caterpillar et": "Caterpillar ET",
+      "caterpillar sis": "Caterpillar SIS",
+      "css": "Komatsu CSS",
+      "cummins guidanz": "Cummins Guidanz",
+      "cummins insite": "Cummins INSITE",
+      "cummins powercommand": "PowerCommand",
+      "davie": "Paccar Davie4",
+      "davie 4": "Paccar Davie4",
+      "davie4": "Paccar Davie4",
+      "dddl": "Detroit Diesel Diagnostic Link",
+      "ddrs": "Detroit Diesel Diagnostic Link",
+      "dealer tool": "OEM proprietary EV or alt fuel tool",
+      "dec": "Kohler Decision Maker",
+      "decision maker": "Kohler Decision Maker",
+      "deere sa": "John Deere Service Advisor",
+      "deif": "DEIF",
+      "desigo": "Siemens Desigo",
+      "detroit diesel diagnostic link": "Detroit Diesel Diagnostic Link",
+      "detroit link": "Detroit Diesel Diagnostic Link",
+      "deutz serdia": "Deutz SerDia",
+      "develon dms": "Develon DMS",
+      "diagmaster": "Kubota Diagmaster",
+      "diagnostic link": "Detroit Diesel Diagnostic Link",
+      "diamond logic": "International Diamond Logic Builder",
+      "diamond logic builder": "International Diamond Logic Builder",
+      "diesel explorer": "Diesel Laptops",
+      "diesel laptops": "Diesel Laptops",
+      "dla": "Diesel Laptops",
+      "dlb": "International Diamond Logic Builder",
+      "dms": "Develon DMS",
+      "doc": "Allison DOC",
+      "doctor zx": "Hitachi Dr. ZX",
+      "doosan dms": "Develon DMS",
+      "dr zx": "Hitachi Dr. ZX",
+      "e technician": "Nexiq eTechnician",
+      "easygen": "Woodward",
+      "electronic service analyst": "Paccar ESA",
+      "electronic service tool": "New Holland EST",
+      "electronic technician": "Caterpillar ET",
+      "environet": "Vertiv Environet",
+      "esa": "Paccar ESA",
+      "eservice": "Case eService",
+      "etechnician": "Nexiq eTechnician",
+      "ev laptop": "OEM proprietary EV or alt fuel tool",
+      "factory tool": "OEM proprietary EV or alt fuel tool",
+      "gcp": "Woodward",
+      "generac dealer software": "Generac Diagnostics",
+      "generac diagnostic": "Generac Diagnostics",
+      "generac diagnostics": "Generac Diagnostics",
+      "genie diagnostics": "Genie Service Tool",
+      "genie service tool": "Genie Service Tool",
+      "guidance": "Cummins Guidanz",
+      "guidanz": "Cummins Guidanz",
+      "hitachi diagnostics": "Hitachi Dr. ZX",
+      "hitachi dr zx": "Hitachi Dr. ZX",
+      "hyster service tool": "Hyster Yale PC Service Tool",
+      "hyster yale pc service tool": "Hyster Yale PC Service Tool",
+      "i vu": "Carrier i-Vu",
+      "in site": "Cummins INSITE",
+      "incite": "Cummins INSITE",
+      "inpower": "PowerCommand",
+      "insite": "Cummins INSITE",
+      "international diamond logic builder": "International Diamond Logic Builder",
+      "international servicemaxx": "International ServiceMaxx",
+      "ivu": "Carrier i-Vu",
+      "j pro": "Noregon JPRO",
+      "jace": "Tridium Niagara",
+      "jal test": "Jaltest",
+      "jaltest": "Jaltest",
+      "jcb servicemaster": "JCB ServiceMaster",
+      "jci metasys": "Johnson Controls Metasys",
+      "jd service advisor": "John Deere Service Advisor",
+      "jlg analyzer": "JLG Analyzer",
+      "jlg handheld": "JLG Analyzer",
+      "john deere service advisor": "John Deere Service Advisor",
+      "johnson controls metasys": "Johnson Controls Metasys",
+      "jpro": "Noregon JPRO",
+      "kohler decision maker": "Kohler Decision Maker",
+      "kohler dm": "Kohler Decision Maker",
+      "komatsu css": "Komatsu CSS",
+      "komtrax": "Komatsu CSS",
+      "kubota diagmaster": "Kubota Diagmaster",
+      "mack premium tech tool": "Mack Premium Tech Tool",
+      "mack ptt": "Mack Premium Tech Tool",
+      "mack tech tool": "Mack Premium Tech Tool",
+      "meritor wabco toolbox": "Wabco Toolbox",
+      "meta sys": "Johnson Controls Metasys",
+      "metasys": "Johnson Controls Metasys",
+      "mobile link": "Generac Diagnostics",
+      "multi line": "DEIF",
+      "navistar engine diagnostics": "Navistar NED",
+      "navistar ned": "Navistar NED",
+      "navistar servicemaxx": "International ServiceMaxx",
+      "ned": "Navistar NED",
+      "new holland est": "New Holland EST",
+      "nexiq": "Nexiq eTechnician",
+      "nexiq etechnician": "Nexiq eTechnician",
+      "nh est": "New Holland EST",
+      "niagara": "Tridium Niagara",
+      "niagara 4": "Tridium Niagara",
+      "noregon": "Noregon JPRO",
+      "noregon jpro": "Noregon JPRO",
+      "oem proprietary ev or alt fuel tool": "OEM proprietary EV or alt fuel tool",
+      "off highway": "Texa",
+      "paccar davie": "Paccar Davie4",
+      "paccar davie4": "Paccar Davie4",
+      "paccar esa": "Paccar ESA",
+      "pc service tool": "Hyster Yale PC Service Tool",
+      "pcc": "PowerCommand",
+      "perkins electronic service tool": "Perkins EST",
+      "perkins est": "Perkins EST",
+      "powercommand": "PowerCommand",
+      "premium tech tool": "Volvo Premium Tech Tool",
+      "professional diagnostics": "Noregon JPRO",
+      "proprietary tool": "OEM proprietary EV or alt fuel tool",
+      "ptt": "Volvo Premium Tech Tool",
+      "serdia": "Deutz SerDia",
+      "service advisor": "John Deere Service Advisor",
+      "service analyzer": "Bobcat Service Analyzer",
+      "service information system": "Caterpillar SIS",
+      "service maxx": "International ServiceMaxx",
+      "servicemaster": "JCB ServiceMaster",
+      "servicemaxx": "International ServiceMaxx",
+      "siemens desigo": "Siemens Desigo",
+      "sis": "Caterpillar SIS",
+      "sis2": "Caterpillar SIS",
+      "sitetech": "Kohler Decision Maker",
+      "snap on verus": "Snap-on Verus",
+      "snap on zeus": "Snap-on Verus",
+      "tech tool": "Volvo Premium Tech Tool",
+      "texa": "Texa",
+      "texa idc5": "Texa",
+      "thermo king wintrac": "Thermo King WinTrac",
+      "toolbox": "Wabco Toolbox",
+      "tracer": "Trane Tracer",
+      "tracer sc": "Trane Tracer",
+      "trane tracer": "Trane Tracer",
+      "transicold software": "Carrier Transicold Diagnostics",
+      "trellis": "Vertiv Environet",
+      "tridium": "Tridium Niagara",
+      "tridium niagara": "Tridium Niagara",
+      "usb link": "Nexiq eTechnician",
+      "usb link 2": "Nexiq eTechnician",
+      "usb link 3": "Nexiq eTechnician",
+      "vertiv environet": "Vertiv Environet",
+      "verus": "Snap-on Verus",
+      "volvo premium tech tool": "Volvo Premium Tech Tool",
+      "volvo ptt": "Volvo Premium Tech Tool",
+      "wabco toolbox": "Wabco Toolbox",
+      "web ctrl": "Automated Logic WebCTRL",
+      "webctrl": "Automated Logic WebCTRL",
+      "win trac": "Thermo King WinTrac",
+      "wintrac": "Thermo King WinTrac",
+      "woodward": "Woodward",
+      "yale service tool": "Hyster Yale PC Service Tool",
+      "zeus": "Snap-on Verus"
+    },
+    "systems": {
+      "12 volt": "Electrical and electronics",
+      "1234yf": "HVAC",
+      "134a": "HVAC",
+      "24 volt": "Electrical and electronics",
+      "3d": "Machine control",
+      "600 volt": "High voltage systems",
+      "7th injector": "Aftertreatment",
+      "90 day": "DOT inspection",
+      "a c": "HVAC",
+      "a92 inspection": "Aerial device inspection",
+      "abs": "Air brakes",
+      "ac": "HVAC",
+      "aerial device inspection": "Aerial device inspection",
+      "aerial inspection": "Aerial device inspection",
+      "after treatment": "Aftertreatment",
+      "aftertreatment": "Aftertreatment",
+      "air audit": "Compressed air systems",
+      "air brake": "Air brakes",
+      "air brakes": "Air brakes",
+      "air conditioning": "HVAC",
+      "air dryer": "Air brakes",
+      "air end": "Compressed air systems",
+      "air ride": "Suspension and steering",
+      "alignment": "Suspension and steering",
+      "allen bradley": "Controls and PLC",
+      "alternator": "Electrical and electronics",
+      "amt": "Transmissions",
+      "annual boom inspection": "Aerial device inspection",
+      "annual crane": "Crane inspection",
+      "annual inspection": "DOT inspection",
+      "ansi inspection": "Aerial device inspection",
+      "ats service": "Transfer switch service",
+      "automated manual": "Transmissions",
+      "automatic": "Transmissions",
+      "automation": "Controls and PLC",
+      "axle": "Differentials and axles",
+      "bank test": "Load bank testing",
+      "bas": "BMS and building controls",
+      "battery": "Battery and UPS",
+      "battery and ups": "Battery and UPS",
+      "battery pack": "High voltage systems",
+      "belt repair": "Conveyor belt splicing",
+      "belt splice": "Conveyor belt splicing",
+      "belt tracking": "Conveyor belt splicing",
+      "bit": "DOT inspection",
+      "blow bars": "Crusher wear parts and relining",
+      "bms": "BMS and building controls",
+      "bms and building controls": "BMS and building controls",
+      "boom and structural repair": "Boom and structural repair",
+      "boom repair": "Boom and structural repair",
+      "boom test": "Dielectric testing",
+      "boring": "Machining",
+      "bottom end": "Engine overhaul",
+      "breakdown": "Mobile and road service",
+      "breaker": "Switchgear maintenance",
+      "building automation": "BMS and building controls",
+      "building management": "BMS and building controls",
+      "caliper": "Hydraulic brakes",
+      "cam follower": "Fuel systems",
+      "can bus": "Engine electronics",
+      "capacity test": "Battery and UPS",
+      "carrier": "Differentials and axles",
+      "charging": "Electrical and electronics",
+      "chilled water": "Chilled water systems",
+      "chilled water systems": "Chilled water systems",
+      "chw": "Chilled water systems",
+      "climate control": "HVAC",
+      "closed transition": "Transfer switch service",
+      "clutch": "Transmissions",
+      "cng fuel system inspection": "CNG fuel system inspection",
+      "cng inspection": "CNG fuel system inspection",
+      "commissioning": "Commissioning and integrated testing",
+      "commissioning and integrated testing": "Commissioning and integrated testing",
+      "common rail": "Fuel systems",
+      "compressed air": "Compressed air systems",
+      "compressed air systems": "Compressed air systems",
+      "concave": "Crusher wear parts and relining",
+      "controls and plc": "Controls and PLC",
+      "conveyor belt splicing": "Conveyor belt splicing",
+      "crack repair": "Boom and structural repair",
+      "crane inspection": "Crane inspection",
+      "crusher wear parts and relining": "Crusher wear parts and relining",
+      "cx": "Commissioning and integrated testing",
+      "cylinder inspection": "CNG fuel system inspection",
+      "cylinders": "Hydraulics",
+      "datalink": "Engine electronics",
+      "ddc": "BMS and building controls",
+      "def": "Aftertreatment",
+      "dielectric": "Dielectric testing",
+      "dielectric test": "Dielectric testing",
+      "dielectric testing": "Dielectric testing",
+      "diff": "Differentials and axles",
+      "differential": "Differentials and axles",
+      "differentials and axles": "Differentials and axles",
+      "disc brake": "Hydraulic brakes",
+      "doser": "Aftertreatment",
+      "dot inspection": "DOT inspection",
+      "dpf": "Aftertreatment",
+      "driveline": "Differentials and axles",
+      "driveshaft": "Differentials and axles",
+      "dryer": "Compressed air systems",
+      "ecm": "Engine electronics",
+      "egr": "Aftertreatment",
+      "electrical": "Electrical and electronics",
+      "electrical and electronics": "Electrical and electronics",
+      "emissions": "Aftertreatment",
+      "engine control": "Engine electronics",
+      "engine electronics": "Engine electronics",
+      "engine overhaul": "Engine overhaul",
+      "fab": "Welding and fabrication",
+      "fabrication": "Welding and fabrication",
+      "failure scenario testing": "Commissioning and integrated testing",
+      "field service": "Mobile and road service",
+      "final drive": "Hydrostatic drive",
+      "fleet manager": "Shop leadership",
+      "fleet tracking": "Telematics",
+      "fmcsa inspection": "DOT inspection",
+      "foreman": "Shop leadership",
+      "foundation brake": "Air brakes",
+      "front end": "BMS and building controls",
+      "fuel pump": "Fuel systems",
+      "fuel system": "Fuel systems",
+      "fuel systems": "Fuel systems",
+      "genset controls": "Controls and PLC",
+      "geotab": "Telematics",
+      "gps": "Telematics",
+      "gps grade": "Machine control",
+      "grade control": "Machine control",
+      "greasing": "Preventive maintenance",
+      "hi pot": "Dielectric testing",
+      "high pressure": "Hydraulics",
+      "high voltage": "High voltage systems",
+      "high voltage systems": "High voltage systems",
+      "hipot": "Dielectric testing",
+      "hmi": "Controls and PLC",
+      "hoses": "Hydraulics",
+      "hpcr": "Fuel systems",
+      "hv": "High voltage systems",
+      "hv safety": "High voltage systems",
+      "hvac": "HVAC",
+      "hyd": "Hydraulics",
+      "hydraulic": "Hydraulics",
+      "hydraulic brake": "Hydraulic brakes",
+      "hydraulic brakes": "Hydraulic brakes",
+      "hydraulics": "Hydraulics",
+      "hydro drive": "Hydrostatic drive",
+      "hydrostatic": "Hydrostatic drive",
+      "hydrostatic drive": "Hydrostatic drive",
+      "idlers": "Undercarriage",
+      "impeller": "Pump service",
+      "in frame": "Engine overhaul",
+      "inframe": "Engine overhaul",
+      "infrared": "Infrared and predictive",
+      "infrared and predictive": "Infrared and predictive",
+      "injector": "Fuel systems",
+      "injectors": "Fuel systems",
+      "insulation test": "Dielectric testing",
+      "integrated systems test": "Commissioning and integrated testing",
+      "ir scan": "Infrared and predictive",
+      "ist": "Commissioning and integrated testing",
+      "j1939": "Engine electronics",
+      "jaw dies": "Crusher wear parts and relining",
+      "king pin": "Suspension and steering",
+      "lacing": "Conveyor belt splicing",
+      "lathe": "Machining",
+      "lead tech": "Shop leadership",
+      "leaf spring": "Suspension and steering",
+      "level 5": "Commissioning and integrated testing",
+      "line bore": "Machining",
+      "liners": "Crusher wear parts and relining",
+      "lithium": "Battery and UPS",
+      "load bank": "Load bank testing",
+      "load bank testing": "Load bank testing",
+      "load sense": "Hydraulics",
+      "load share": "Paralleling",
+      "load test": "Load bank testing",
+      "lof": "Preventive maintenance",
+      "long block": "Engine overhaul",
+      "machine control": "Machine control",
+      "machining": "Machining",
+      "maintenance manager": "Shop leadership",
+      "mantle": "Crusher wear parts and relining",
+      "manual": "Transmissions",
+      "master cylinder": "Hydraulic brakes",
+      "mechanical seal": "Pump service",
+      "medium voltage": "Switchgear maintenance",
+      "mig": "Welding and fabrication",
+      "mill": "Machining",
+      "mobile": "Mobile and road service",
+      "mobile and road service": "Mobile and road service",
+      "multimeter": "Electrical and electronics",
+      "mv": "Switchgear maintenance",
+      "ngv inspection": "CNG fuel system inspection",
+      "oil analysis": "Infrared and predictive",
+      "oil change": "Preventive maintenance",
+      "omnitracs": "Telematics",
+      "open transition": "Transfer switch service",
+      "orange cable": "High voltage systems",
+      "osha crane": "Crane inspection",
+      "overhaul": "Engine overhaul",
+      "packing": "Pump service",
+      "parallel": "Paralleling",
+      "paralleling": "Paralleling",
+      "pilot": "Hydraulics",
+      "pins and bushings": "Boom and structural repair",
+      "plasma": "Welding and fabrication",
+      "plc": "Controls and PLC",
+      "pm": "Preventive maintenance",
+      "predictive": "Infrared and predictive",
+      "preventative": "Preventive maintenance",
+      "preventive maintenance": "Preventive maintenance",
+      "primary secondary": "Chilled water systems",
+      "pull the plug": "Commissioning and integrated testing",
+      "pump service": "Pump service",
+      "pumps and valves": "Chilled water systems",
+      "racking": "Switchgear maintenance",
+      "rear end": "Differentials and axles",
+      "rebuild": "Engine overhaul",
+      "rebuild crusher": "Crusher wear parts and relining",
+      "receiver tank": "Compressed air systems",
+      "refrigerant": "HVAC",
+      "regen": "Aftertreatment",
+      "relay": "Switchgear maintenance",
+      "relining": "Crusher wear parts and relining",
+      "resistive load": "Load bank testing",
+      "road service": "Mobile and road service",
+      "road service tire": "Tires",
+      "roadside": "Mobile and road service",
+      "rollers": "Undercarriage",
+      "s cam": "Air brakes",
+      "samsara": "Telematics",
+      "scada": "Controls and PLC",
+      "schematics": "Electrical and electronics",
+      "scr": "Aftertreatment",
+      "sensors": "Engine electronics",
+      "service": "Preventive maintenance",
+      "service manager": "Shop leadership",
+      "service truck": "Mobile and road service",
+      "shop leadership": "Shop leadership",
+      "shop manager": "Shop leadership",
+      "slack adjuster": "Air brakes",
+      "splicing": "Conveyor belt splicing",
+      "sprockets": "Undercarriage",
+      "starter": "Electrical and electronics",
+      "starting": "Electrical and electronics",
+      "steering": "Suspension and steering",
+      "stick": "Welding and fabrication",
+      "string": "Battery and UPS",
+      "structural": "Boom and structural repair",
+      "supervisor": "Shop leadership",
+      "suspension": "Suspension and steering",
+      "suspension and steering": "Suspension and steering",
+      "switchgear": "Switchgear maintenance",
+      "switchgear maintenance": "Switchgear maintenance",
+      "sync": "Paralleling",
+      "synchronizing": "Paralleling",
+      "tank inspection": "CNG fuel system inspection",
+      "telematics": "Telematics",
+      "thermography": "Infrared and predictive",
+      "tie rod": "Suspension and steering",
+      "tig": "Welding and fabrication",
+      "tire": "Tires",
+      "tire service": "Tires",
+      "tires": "Tires",
+      "top end": "Engine overhaul",
+      "topcon": "Machine control",
+      "torch": "Welding and fabrication",
+      "track chain": "Undercarriage",
+      "tracks": "Undercarriage",
+      "traction battery": "High voltage systems",
+      "trans": "Transmissions",
+      "transfer switch": "Transfer switch service",
+      "transfer switch service": "Transfer switch service",
+      "transmission": "Transmissions",
+      "transmissions": "Transmissions",
+      "travel motor": "Hydrostatic drive",
+      "trimble": "Machine control",
+      "troubleshooting": "Electrical and electronics",
+      "u joint": "Differentials and axles",
+      "undercarriage": "Undercarriage",
+      "unit inspection": "Aerial device inspection",
+      "ups": "Battery and UPS",
+      "vibration analysis": "Infrared and predictive",
+      "vrla": "Battery and UPS",
+      "vulcanizing": "Conveyor belt splicing",
+      "water side": "Chilled water systems",
+      "wear parts": "Crusher wear parts and relining",
+      "weld": "Welding and fabrication",
+      "welding": "Welding and fabrication",
+      "welding and fabrication": "Welding and fabrication",
+      "wire rope": "Crane inspection",
+      "wiring": "Electrical and electronics"
+    },
+    "certs": {
+      "10 hour": "OSHA 10",
+      "1910 178": "Forklift Operator",
+      "30 hour": "OSHA 30",
+      "396 19": "Federal Annual Inspector",
+      "396 25": "Federal Brake Inspector",
+      "40 hour": "HAZWOPER 40 Hour",
+      "608": "EPA 608 Universal",
+      "609": "EPA 609 MVAC",
+      "70e": "NFPA 70E",
+      "a1": "ASE Automobile A1 to A9",
+      "a10 31": "ANSI A92 Aerial Device Inspector",
+      "a2": "ASE Automobile A1 to A9",
+      "a3": "ASE Automobile A1 to A9",
+      "a4": "ASE Automobile A1 to A9",
+      "a5": "ASE Automobile A1 to A9",
+      "a6": "ASE Automobile A1 to A9",
+      "a7": "ASE Automobile A1 to A9",
+      "a8": "ASE Automobile A1 to A9",
+      "a9": "ASE Automobile A1 to A9",
+      "a92": "ANSI A92 Aerial Device Inspector",
+      "acceptance testing": "NETA Level II Technician",
+      "advanced diesel": "ASE L2 Electronic Diesel Engine Diagnosis",
+      "aed": "First Aid and CPR",
+      "aerial device inspector": "ANSI A92 Aerial Device Inspector",
+      "aerial lift": "Aerial Lift MEWP Operator",
+      "aerial lift mewp operator": "Aerial Lift MEWP Operator",
+      "air brake": "Air Brake qualified",
+      "air brake qualified": "Air Brake qualified",
+      "allison certified": "Allison Certified",
+      "allison university": "Allison Certified",
+      "altec certified": "Altec Certified",
+      "altec school": "Altec Certified",
+      "altec trained": "Altec Certified",
+      "annual inspector": "Federal Annual Inspector",
+      "ansi a92 aerial device inspector": "ANSI A92 Aerial Device Inspector",
+      "ansi inspection": "ANSI A92 Aerial Device Inspector",
+      "arc flash": "NFPA 70E",
+      "ase auto": "ASE Automobile A1 to A9",
+      "ase automobile a1 to a9": "ASE Automobile A1 to A9",
+      "ase l2": "ASE L2 Electronic Diesel Engine Diagnosis",
+      "ase l2 electronic diesel engine diagnosis": "ASE L2 Electronic Diesel Engine Diagnosis",
+      "ase l3": "ASE L3 Light Duty Hybrid Electric",
+      "ase l3 light duty hybrid electric": "ASE L3 Light Duty Hybrid Electric",
+      "ase master": "ASE Master Medium Heavy Truck",
+      "ase master automobile": "ASE Master Automobile",
+      "ase master medium heavy truck": "ASE Master Medium Heavy Truck",
+      "ase school bus s series": "ASE School Bus S Series",
+      "ase t1": "ASE T1 Gasoline Engines",
+      "ase t1 gasoline engines": "ASE T1 Gasoline Engines",
+      "ase t2": "ASE T2 Diesel Engines",
+      "ase t2 diesel engines": "ASE T2 Diesel Engines",
+      "ase t3": "ASE T3 Drive Train",
+      "ase t3 drive train": "ASE T3 Drive Train",
+      "ase t4": "ASE T4 Brakes",
+      "ase t4 brakes": "ASE T4 Brakes",
+      "ase t5": "ASE T5 Suspension and Steering",
+      "ase t5 suspension and steering": "ASE T5 Suspension and Steering",
+      "ase t6": "ASE T6 Electrical and Electronic Systems",
+      "ase t6 electrical and electronic systems": "ASE T6 Electrical and Electronic Systems",
+      "ase t7": "ASE T7 HVAC",
+      "ase t7 hvac": "ASE T7 HVAC",
+      "ase t8": "ASE T8 Preventive Maintenance Inspection",
+      "ase t8 preventive maintenance inspection": "ASE T8 Preventive Maintenance Inspection",
+      "ase transit bus h series": "ASE Transit Bus H Series",
+      "ase truck equipment e series": "ASE Truck Equipment E Series",
+      "atssa flagger": "Flagger Certification",
+      "aws": "AWS Welding Certification",
+      "aws welding certification": "AWS Welding Certification",
+      "boom cert": "Aerial Lift MEWP Operator",
+      "brake inspector": "Federal Brake Inspector",
+      "bucket rescue": "Pole Top and Bucket Rescue",
+      "carrier cert": "Carrier Certified",
+      "carrier certified": "Carrier Certified",
+      "cat certified": "Caterpillar Certified",
+      "cat dealer tech": "Caterpillar Certified",
+      "cat tech cert": "Caterpillar Certified",
+      "caterpillar certified": "Caterpillar Certified",
+      "cco": "NCCCO Crane Operator",
+      "cdcp": "Certified Data Centre Professional (CDCP)",
+      "cdl a": "CDL Class A",
+      "cdl b": "CDL Class B",
+      "cdl c": "CDL Class C",
+      "cdl class a": "CDL Class A",
+      "cdl class b": "CDL Class B",
+      "cdl class c": "CDL Class C",
+      "certified data centre professional cdcp": "Certified Data Centre Professional (CDCP)",
+      "certified welder": "AWS Welding Certification",
+      "class a": "CDL Class A",
+      "class b": "CDL Class B",
+      "class c": "CDL Class C",
+      "cng inspector": "CSA CNG Fuel System Inspector",
+      "confined space": "Confined Space",
+      "covered task": "Operator Qualification (OQ)",
+      "cpr": "First Aid and CPR",
+      "crane inspector cert": "NCCCO Crane Inspector",
+      "crane operator cert": "NCCCO Crane Operator",
+      "csa cng fuel system inspector": "CSA CNG Fuel System Inspector",
+      "csa inspector": "CSA CNG Fuel System Inspector",
+      "cummins cert": "Cummins Certified",
+      "cummins certified": "Cummins Certified",
+      "cummins platinum": "Cummins Certified",
+      "d1 1": "AWS Welding Certification",
+      "data center certified": "Certified Data Centre Professional (CDCP)",
+      "dd certified": "Detroit Diesel Certified",
+      "deere certified": "John Deere Certified",
+      "detroit certified": "Detroit Diesel Certified",
+      "detroit diesel certified": "Detroit Diesel Certified",
+      "diesel engines cert": "ASE T2 Diesel Engines",
+      "dot inspector": "Federal Annual Inspector",
+      "doubles": "Doubles Triples endorsement",
+      "doubles triples endorsement": "Doubles Triples endorsement",
+      "e1": "ASE Truck Equipment E Series",
+      "e2": "ASE Truck Equipment E Series",
+      "e3": "ASE Truck Equipment E Series",
+      "egsa": "EGSA Certified Technician",
+      "egsa certified technician": "EGSA Certified Technician",
+      "electrical license": "Journeyman Electrician License",
+      "electrical safety": "NFPA 70E",
+      "epa 608": "EPA 608 Universal",
+      "epa 608 universal": "EPA 608 Universal",
+      "epa 609": "EPA 609 MVAC",
+      "epa 609 mvac": "EPA 609 MVAC",
+      "epi certified": "Certified Data Centre Professional (CDCP)",
+      "ev cert": "ASE L3 Light Duty Hybrid Electric",
+      "ev safety": "High Voltage Safety Training",
+      "federal annual inspector": "Federal Annual Inspector",
+      "federal brake inspector": "Federal Brake Inspector",
+      "first aid": "First Aid and CPR",
+      "first aid and cpr": "First Aid and CPR",
+      "flagger": "Flagger Certification",
+      "flagger certification": "Flagger Certification",
+      "fmcsa brake": "Federal Brake Inspector",
+      "forklift cert": "Forklift Operator",
+      "forklift operator": "Forklift Operator",
+      "fuel system inspector": "CSA CNG Fuel System Inspector",
+      "generac certified": "Generac Certified",
+      "generac dealer tech": "Generac Certified",
+      "generator tech cert": "EGSA Certified Technician",
+      "h endorsement": "HazMat endorsement",
+      "h1": "ASE Transit Bus H Series",
+      "h2": "ASE Transit Bus H Series",
+      "h3": "ASE Transit Bus H Series",
+      "h4": "ASE Transit Bus H Series",
+      "h5": "ASE Transit Bus H Series",
+      "h6": "ASE Transit Bus H Series",
+      "h7": "ASE Transit Bus H Series",
+      "h8": "ASE Transit Bus H Series",
+      "hazardous materials": "HazMat endorsement",
+      "hazmat": "HazMat endorsement",
+      "hazmat endorsement": "HazMat endorsement",
+      "hazwoper": "HAZWOPER 40 Hour",
+      "hazwoper 40": "HAZWOPER 40 Hour",
+      "hazwoper 40 hour": "HAZWOPER 40 Hour",
+      "high voltage safety training": "High Voltage Safety Training",
+      "high voltage training": "High Voltage Safety Training",
+      "hv safety": "High Voltage Safety Training",
+      "hybrid cert": "ASE L3 Light Duty Hybrid Electric",
+      "jd certified": "John Deere Certified",
+      "john deere certified": "John Deere Certified",
+      "journeyman": "Journeyman Electrician License",
+      "journeyman electrician": "Journeyman Electrician License",
+      "journeyman electrician license": "Journeyman Electrician License",
+      "kohler certified": "Kohler Certified",
+      "kohler dealer tech": "Kohler Certified",
+      "l2": "ASE L2 Electronic Diesel Engine Diagnosis",
+      "l3": "ASE L3 Light Duty Hybrid Electric",
+      "liebert certified": "Liebert Certified",
+      "liebert trained": "Liebert Certified",
+      "lockout": "Lockout Tagout",
+      "lockout tagout": "Lockout Tagout",
+      "loto": "Lockout Tagout",
+      "master auto": "ASE Master Automobile",
+      "master electrician": "Journeyman Electrician License",
+      "master truck": "ASE Master Medium Heavy Truck",
+      "medium heavy master": "ASE Master Medium Heavy Truck",
+      "mewp": "Aerial Lift MEWP Operator",
+      "mobile ac cert": "EPA 609 MVAC",
+      "msha": "MSHA Part 46",
+      "msha part 46": "MSHA Part 46",
+      "msha part 48": "MSHA Part 48",
+      "mvac": "EPA 609 MVAC",
+      "n endorsement": "Tanker endorsement",
+      "nccco": "NCCCO Crane Operator",
+      "nccco crane inspector": "NCCCO Crane Inspector",
+      "nccco crane operator": "NCCCO Crane Operator",
+      "nccco inspector": "NCCCO Crane Inspector",
+      "neta": "NETA Level II Technician",
+      "neta certified": "NETA Level II Technician",
+      "neta level 2": "NETA Level II Technician",
+      "neta level ii": "NETA Level II Technician",
+      "neta level ii technician": "NETA Level II Technician",
+      "nfpa 70e": "NFPA 70E",
+      "ngv inspector": "CSA CNG Fuel System Inspector",
+      "no air brake restriction": "Air Brake qualified",
+      "operator qualification": "Operator Qualification (OQ)",
+      "operator qualification oq": "Operator Qualification (OQ)",
+      "oq": "Operator Qualification (OQ)",
+      "osha 10": "OSHA 10",
+      "osha 30": "OSHA 30",
+      "osha10": "OSHA 10",
+      "osha30": "OSHA 30",
+      "part 46": "MSHA Part 46",
+      "part 48": "MSHA Part 48",
+      "permit required": "Confined Space",
+      "pipeline oq": "Operator Qualification (OQ)",
+      "pmi": "ASE T8 Preventive Maintenance Inspection",
+      "pole top and bucket rescue": "Pole Top and Bucket Rescue",
+      "pole top rescue": "Pole Top and Bucket Rescue",
+      "powered industrial truck": "Forklift Operator",
+      "qualified inspector": "Federal Annual Inspector",
+      "qualified rigger": "Rigging and Signal Person",
+      "refrigerant cert": "EPA 608 Universal",
+      "rescue training": "Pole Top and Bucket Rescue",
+      "rigger": "Rigging and Signal Person",
+      "rigging": "Rigging and Signal Person",
+      "rigging and signal person": "Rigging and Signal Person",
+      "s1": "ASE School Bus S Series",
+      "s2": "ASE School Bus S Series",
+      "s3": "ASE School Bus S Series",
+      "s4": "ASE School Bus S Series",
+      "s5": "ASE School Bus S Series",
+      "s6": "ASE School Bus S Series",
+      "s7": "ASE School Bus S Series",
+      "school bus ase": "ASE School Bus S Series",
+      "scissor cert": "Aerial Lift MEWP Operator",
+      "section 608": "EPA 608 Universal",
+      "signal person": "Rigging and Signal Person",
+      "sos": "Caterpillar Certified",
+      "surface mining": "MSHA Part 46",
+      "t endorsement": "Doubles Triples endorsement",
+      "t1": "ASE T1 Gasoline Engines",
+      "t2": "ASE T2 Diesel Engines",
+      "t3": "ASE T3 Drive Train",
+      "t4": "ASE T4 Brakes",
+      "t5": "ASE T5 Suspension and Steering",
+      "t6": "ASE T6 Electrical and Electronic Systems",
+      "t7": "ASE T7 HVAC",
+      "t8": "ASE T8 Preventive Maintenance Inspection",
+      "tagout": "Lockout Tagout",
+      "tanker": "Tanker endorsement",
+      "tanker endorsement": "Tanker endorsement",
+      "thermo king cert": "Thermo King Certified",
+      "thermo king certified": "Thermo King Certified",
+      "tk certified": "Thermo King Certified",
+      "traffic control": "Flagger Certification",
+      "trane certified": "Trane Certified",
+      "trane trained": "Trane Certified",
+      "transicold certified": "Carrier Certified",
+      "transit bus ase": "ASE Transit Bus H Series",
+      "transportation worker id": "TWIC Card",
+      "triples": "Doubles Triples endorsement",
+      "truck equipment ase": "ASE Truck Equipment E Series",
+      "twic": "TWIC Card",
+      "twic card": "TWIC Card",
+      "underground msha": "MSHA Part 48",
+      "universal": "EPA 608 Universal",
+      "vertiv certified": "Liebert Certified",
+      "weld cert": "AWS Welding Certification"
+    },
+    "cdl_class": {
+      "a": "Class A",
+      "b": "Class B",
+      "c": "Class C",
+      "cdl a": "Class A",
+      "cdl b": "Class B",
+      "cdl c": "Class C",
+      "class a": "Class A",
+      "class b": "Class B",
+      "class c": "Class C",
+      "clp": "Permit",
+      "don t have one": "None",
+      "learners permit": "Permit",
+      "n a": "None",
+      "no cdl": "None",
+      "none": "None",
+      "permit": "Permit"
+    },
+    "own_tools": {
+      "basic hand tools": "Partial set",
+      "building my set": "Partial set",
+      "company provides": "None",
+      "complete set": "Full set",
+      "full set": "Full set",
+      "fully tooled": "Full set",
+      "no": "None",
+      "none": "None",
+      "own my tools": "Full set",
+      "partial": "Partial set",
+      "partial set": "Partial set",
+      "shop tools": "None",
+      "some tools": "Partial set",
+      "yes": "Full set"
+    }
+  },
+  "appears_in_more_than_one_list": {
+    "air brake": ["systems", "certs"],
+    "ansi inspection": ["systems", "certs"],
+    "bobcat": ["equipment", "brands"],
+    "carrier": ["brands", "systems"],
+    "cdl a": ["certs", "cdl_class"],
+    "cdl b": ["certs", "cdl_class"],
+    "cdl c": ["certs", "cdl_class"],
+    "class a": ["certs", "cdl_class"],
+    "class b": ["certs", "cdl_class"],
+    "class c": ["certs", "cdl_class"],
+    "field service": ["trade", "systems"],
+    "fleet manager": ["trade", "systems"],
+    "foreman": ["trade", "systems"],
+    "h2": ["equipment", "certs"],
+    "hv safety": ["systems", "certs"],
+    "journeyman electrician": ["trade", "certs"],
+    "lead tech": ["trade", "systems"],
+    "maintenance manager": ["trade", "systems"],
+    "mewp": ["equipment", "certs"],
+    "nccco inspector": ["trade", "certs"],
+    "none": ["cdl_class", "own_tools"],
+    "road service": ["trade", "systems"],
+    "service advisor": ["trade", "diag_software"],
+    "service manager": ["trade", "systems"],
+    "service truck": ["equipment", "systems"],
+    "shop manager": ["trade", "systems"],
+    "super duty": ["equipment", "brands"],
+    "switchgear": ["equipment", "systems"],
+    "tanker": ["equipment", "certs"],
+    "transfer switch": ["equipment", "systems"],
+    "ups": ["equipment", "systems"]
+  }
+}

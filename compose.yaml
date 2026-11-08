@@ -1,0 +1,42 @@
+# Servicios locales (01 decisión 23): PostgreSQL+PostGIS y ClamAV. Node corre nativo.
+# Puertos publicados solo en 127.0.0.1. Las contraseñas son de desarrollo local y no sirven en otro lado.
+name: dieseljobsusa
+
+services:
+  db:
+    image: postgis/postgis:18-3.6
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres_local_dev_only
+      POSTGRES_DB: postgres
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql
+      # Solo corre la primera vez, con el volumen vacío: crea dju_dev y dju_test con sus roles.
+      - ./infra/db/init-local.sh:/docker-entrypoint-initdb.d/20_dju.sh:ro
+      - ./infra/db/roles.sql:/dju/roles.sql:ro
+    healthcheck:
+      test: ["CMD", "pg_isready", "-h", "127.0.0.1", "-U", "postgres", "-d", "postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 30s
+
+  clamav:
+    image: clamav/clamav:stable
+    ports:
+      - "127.0.0.1:3310:3310"
+    volumes:
+      # Las firmas quedan aquí: solo el primer arranque las descarga completas.
+      - clamav-db:/var/lib/clamav
+    healthcheck:
+      test: ["CMD", "clamdcheck.sh"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10m
+
+volumes:
+  pgdata:
+  clamav-db:

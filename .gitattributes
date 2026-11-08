@@ -1,0 +1,8 @@
+# Por defecto Git decide; los textos se guardan con LF en el repositorio.
+* text=auto eol=lf
+
+# El hook y los scripts corren en sh/node también desde Windows: siempre LF.
+.githooks/* text eol=lf
+scripts/** text eol=lf
+*.sh text eol=lf
+*.mjs text eol=lf

@@ -1,0 +1,53 @@
+{
+  "name": "dieseljobsusa",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Bolsa de empleo para técnicos diésel y de equipo pesado",
+  "type": "module",
+  "engines": {
+    "node": ">=24.22.0",
+    "npm": ">=11.19.0"
+  },
+  "scripts": {
+    "dev": "tsx watch --env-file=.env src/server.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node --env-file=.env dist/server.js",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check .",
+    "format": "biome check --write .",
+    "prepare": "node scripts/prepare.mjs",
+    "mockup:build": "tsx mockup/build/build.ts",
+    "mockup:dev": "tsx watch mockup/build/serve.ts --dev",
+    "mockup:shots": "tsx mockup/build/shots.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate && tsx --env-file-if-exists=.env scripts/pgboss-migrate.ts",
+    "db:reset": "tsx --env-file-if-exists=.env scripts/db-reset.ts"
+  },
+  "dependencies": {
+    "@fastify/cookie": "11.1.3",
+    "@fastify/helmet": "13.2.0",
+    "@fastify/sensible": "6.0.7",
+    "@fastify/type-provider-zod": "1.0.1",
+    "drizzle-orm": "0.45.4",
+    "fastify": "5.12.7",
+    "pg": "8.23.1",
+    "pg-boss": "12.38.0",
+    "pino": "10.4.0",
+    "preact": "10.29.8",
+    "preact-render-to-string": "6.8.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.6.2",
+    "@playwright/test": "1.64.1",
+    "@tailwindcss/cli": "4.3.3",
+    "@types/node": "24.19.2",
+    "@types/pg": "8.23.1",
+    "drizzle-kit": "0.31.11",
+    "tailwindcss": "4.3.3",
+    "tsx": "4.23.15",
+    "typescript": "6.0.3",
+    "vitest": "5.0.5"
+  }
+}

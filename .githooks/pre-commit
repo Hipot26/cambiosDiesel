@@ -1,0 +1,10 @@
+#!/bin/sh
+# SEC-87: gitleaks revisa lo que está en stage antes de cada commit.
+# Se activa con `npm run prepare` (core.hooksPath = .githooks). Las reglas propias
+# (.gitleaks.toml) y el paso de CI llegan en T-23.
+if ! command -v gitleaks >/dev/null 2>&1; then
+  echo "pre-commit: gitleaks no está instalado o no está en el PATH; el commit se detiene." >&2
+  echo "Windows: winget install Gitleaks.Gitleaks  ·  Ubuntu/macOS: binario de la release o brew install gitleaks" >&2
+  exit 1
+fi
+exec gitleaks git --pre-commit --staged --redact --no-banner --verbose
